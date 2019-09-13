@@ -1,0 +1,3520 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <title>When is the Next PHP Meetup?</title>
+    <meta charset="utf-8">
+    <meta name="robots" content="index, follow">
+
+        <link rel="preconnect" href="https://www.google-analytics.com" crossorigin>
+    <link rel="preconnect" href="https://raw.githubusercontent.com" crossorigin>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600">
+
+        <link href="/assets/bootstrap/bootstrap.min.css" rel="stylesheet" type="text/css" />
+
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.2/dist/leaflet.css"
+          integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ=="
+          crossorigin=""/>
+
+        <link rel="preconnect" href="https://www.google-analytics.com">
+
+        <link href="/assets/style.css?v=1654196525" rel="stylesheet" type="text/css" />
+</head>
+
+    <body>
+        <div id="head" class="text-center pt-3 pb-2">
+            <h1>
+    <a href="/">
+        When is the Next <strong>PHP Meetup</strong>?
+        🐘
+    </a>
+</h1>
+
+<p>
+    <a href="/">Pick one of 104 meetups</a> from <a href="/groups/">408 PHP groups</a> crawled daily for next 30 days
+</p>
+        </div>
+
+        <div class="container-fluid" id="content">
+            <div class="row">
+                <div class="col-md-12 pb-5 pt-4">
+                    
+<div class="row">
+    <div class="col-12 col-md-6">
+        <div class="row">
+            <div class="col-12">
+                <a name="map"></a>
+                <div id="mapid" class="mb-3"></div>
+            </div>
+        </div>
+
+        
+<div class="row pl-3 pr-3">
+    <a href="/api/meetups.json" class="btn btn-light col-4">Meetups JSON</a>
+    <a href="/api/groups.json" class="btn btn-light col-4">Groups JSON</a>
+    <a href="https://travis-ci.org/TomasVotruba/friendsofphp.org" class="btn btn-light col-4">
+        2019-09-13 CET
+    </a>
+</div>
+    </div>
+
+    <div class="col-12 col-md-6 pl-md-0">
+        <script src="/assets/js/utils.js?v=1974076592"></script>
+
+<div id="table"></div>
+
+<table class="table table-bordered table-responsive" id="table-meetups">
+    <thead class="thead-inverse">
+        <tr>
+            <th class="w-25 text-center">
+                📅
+                &nbsp;
+                <span class="hidden-sm-down">When</span>
+            </th>
+            <th class="w-25 text-center">
+                📍
+
+                <span class="hidden-sm-down">Where</span>
+            </th>
+            <th class="w-50 text-center">
+                <span class="hidden-sm-down">Meetup</span>
+            </th>
+        </tr>
+    </thead>
+    <tr id="block-zoomout">
+        <td colspan="3" class="text-center">
+            No meetups in this area. Try to zoom out a bit!
+        </td>
+    </tr>
+
+            
+                            <tr class="meetup" data-longitude="121.05240631104" data-latitude="14.581197738647" data-datetime="2019-09-14 08:30">
+                <td class="w-25">
+                    <nobr>Sat, Sep 14</nobr>
+                    <br>
+                    <small class="text-secondary">08:30</small>
+                </td>
+                <td class="w-25">
+                    Mandaluyong
+                    <br>
+                    <small class="text-secondary">Philippines</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/Laravel-Philippines/events/264304168/">[CodeCamp] Laravel Part II: Intro to SOLID</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">Laravel Philippines</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="-50.786968231201" data-latitude="-29.639127731323" data-datetime="2019-09-14 09:00">
+                <td class="w-25">
+                    <nobr>Sat, Sep 14</nobr>
+                    <br>
+                    <small class="text-secondary">09:00</small>
+                </td>
+                <td class="w-25">
+                    Taquara
+                    <br>
+                    <small class="text-secondary">Brazil</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/PHP-RS/events/264413329/">Meetup PHPRS em Taquara</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">PHPRS</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="30.7392776" data-latitude="46.4873195" data-datetime="2019-09-14 19:00">
+                <td class="w-25">
+                    <nobr>Sat, Sep 14</nobr>
+                    <br>
+                    <small class="text-secondary">19:00</small>
+                </td>
+                <td class="w-25">
+                    Одесса
+                    <br>
+                    <small class="text-secondary">Ukraine</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://dou.ua/calendar/28385/">Всеукраинская конференция CODEiD – PHP Odessa Conf #6, 14 сентября, Одесса</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">Всеукраинская конференция CODEiD – PHP Odessa Conf</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="-71.078895568848" data-latitude="42.347156524658" data-datetime="2019-09-15 00:00">
+                <td class="w-25">
+                    <nobr>Sun, Sep 15</nobr>
+                    <br>
+                    <small class="text-secondary">00:00</small>
+                </td>
+                <td class="w-25">
+                    Virtual
+                    <br>
+                    <small class="text-secondary">Massachusetts</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/bostonphp/events/262398658/">Git Lunch, Season 3</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">Boston PHP</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="30.5241361" data-latitude="50.4500336" data-datetime="2019-09-15 19:00">
+                <td class="w-25">
+                    <nobr>Sun, Sep 15</nobr>
+                    <br>
+                    <small class="text-secondary">19:00</small>
+                </td>
+                <td class="w-25">
+                    Київ
+                    <br>
+                    <small class="text-secondary">Ukraine</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://dou.ua/calendar/28604/">PHP Boot Camp | EPAM University Program, 15 вересня, Київ</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">PHP Boot Camp | EPAM University Program,</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="3.9209470748901" data-latitude="43.605895996094" data-datetime="2019-09-16 19:00">
+                <td class="w-25">
+                    <nobr>Mon, Sep 16</nobr>
+                    <br>
+                    <small class="text-secondary">19:00</small>
+                </td>
+                <td class="w-25">
+                    Montpellier
+                    <br>
+                    <small class="text-secondary">France</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/Montpellier-PHP-Meetup/events/264521334/">Soirée Mentorat : et si on parlait code ?</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">AFUP Montpellier</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="-1.6159969568253" data-latitude="54.970584869385" data-datetime="2019-09-17 18:00">
+                <td class="w-25">
+                    <nobr>Tue, Sep 17</nobr>
+                    <br>
+                    <small class="text-secondary">18:00</small>
+                </td>
+                <td class="w-25">
+                    Newcastle Upon Tyne
+                    <br>
+                    <small class="text-secondary">United Kingdom</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/phpnortheast/events/264367155/">Sync or Swim</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">PHP North East</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="18.42892074585" data-latitude="-33.918788909912" data-datetime="2019-09-17 18:00">
+                <td class="w-25">
+                    <nobr>Tue, Sep 17</nobr>
+                    <br>
+                    <small class="text-secondary">18:00</small>
+                </td>
+                <td class="w-25">
+                    Cape Town
+                    <br>
+                    <small class="text-secondary">South Africa</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/Cape-Town-PHP-Group/events/264715076/">Accelerated Mobile Pages (AMP) and Laravel Backpack / contributing back to OSS</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">Cape Town PHP Group</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="-122.68419647217" data-latitude="45.529090881348" data-datetime="2019-09-17 18:30">
+                <td class="w-25">
+                    <nobr>Tue, Sep 17</nobr>
+                    <br>
+                    <small class="text-secondary">18:30</small>
+                </td>
+                <td class="w-25">
+                    Portland
+                    <br>
+                    <small class="text-secondary">Oregon</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/PDX-PHP/events/tpjrgryzmbwb/">Monthly Meetup</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">PHPDX</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="-86.153495788574" data-latitude="39.768821716309" data-datetime="2019-09-17 18:30">
+                <td class="w-25">
+                    <nobr>Tue, Sep 17</nobr>
+                    <br>
+                    <small class="text-secondary">18:30</small>
+                </td>
+                <td class="w-25">
+                    Indianapolis
+                    <br>
+                    <small class="text-secondary">Indiana</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/indyphp/events/swphmqyzmbwb/">PHP+Beer DT</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">The Indianapolis PHP Meetup Group</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="5.8119149208069" data-latitude="53.212200164795" data-datetime="2019-09-17 19:00">
+                <td class="w-25">
+                    <nobr>Tue, Sep 17</nobr>
+                    <br>
+                    <small class="text-secondary">19:00</small>
+                </td>
+                <td class="w-25">
+                    Leeuwarden
+                    <br>
+                    <small class="text-secondary">Netherlands</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/PHP-FRL/events/264489876/">Monthly Meetup (September 2019)</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">PHP.FRL</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="5.410463809967" data-latitude="52.177448272705" data-datetime="2019-09-17 19:00">
+                <td class="w-25">
+                    <nobr>Tue, Sep 17</nobr>
+                    <br>
+                    <small class="text-secondary">19:00</small>
+                </td>
+                <td class="w-25">
+                    Amersfoort
+                    <br>
+                    <small class="text-secondary">Netherlands</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/PHPAmersfoort/events/cjgglmyzmbnb/">PHPAmersfoort September 2019</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">PHPAmersfoort</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="3.0660009384155" data-latitude="50.626003265381" data-datetime="2019-09-17 19:00">
+                <td class="w-25">
+                    <nobr>Tue, Sep 17</nobr>
+                    <br>
+                    <small class="text-secondary">19:00</small>
+                </td>
+                <td class="w-25">
+                    Lille
+                    <br>
+                    <small class="text-secondary">France</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/afup-hauts-de-france-php/events/264612904/">[Lille] Apéro PHP le 17/09 à l&#039;Hybride</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">Antenne AFUP Hauts de France : PHP</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="8.2465839385986" data-latitude="50.013652801514" data-datetime="2019-09-17 19:00">
+                <td class="w-25">
+                    <nobr>Tue, Sep 17</nobr>
+                    <br>
+                    <small class="text-secondary">19:00</small>
+                </td>
+                <td class="w-25">
+                    Mainz
+                    <br>
+                    <small class="text-secondary">Germany</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/PHP-User-Group-Rheinhessen/events/264363695/">62. Meetup PHPUG Rheinhessen</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">PHP User Group Rheinhessen</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="2.2984800338745" data-latitude="48.883628845215" data-datetime="2019-09-17 19:00">
+                <td class="w-25">
+                    <nobr>Tue, Sep 17</nobr>
+                    <br>
+                    <small class="text-secondary">19:00</small>
+                </td>
+                <td class="w-25">
+                    Paris
+                    <br>
+                    <small class="text-secondary">France</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/afup-paris-php/events/264685998/">AFUP Septembre 2019</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">Antenne AFUP Paris : PHP</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="3.1966319084167" data-latitude="51.214382171631" data-datetime="2019-09-17 19:30">
+                <td class="w-25">
+                    <nobr>Tue, Sep 17</nobr>
+                    <br>
+                    <small class="text-secondary">19:30</small>
+                </td>
+                <td class="w-25">
+                    Brugge
+                    <br>
+                    <small class="text-secondary">Belgium</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/php-wvl/events/nphhxmyzmbwb/">September meetup bij X-plose</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">PHP-WVL</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="5.4317798614502" data-latitude="51.418262481689" data-datetime="2019-09-18 18:00">
+                <td class="w-25">
+                    <nobr>Wed, Sep 18</nobr>
+                    <br>
+                    <small class="text-secondary">18:00</small>
+                </td>
+                <td class="w-25">
+                    Eindhoven
+                    <br>
+                    <small class="text-secondary">Netherlands</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/PHP-Laravel-Eindhoven/events/264057802/">AST in Wonderland</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">PHP &amp; Laravel development Eindhoven</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="12.930836677551" data-latitude="50.835605621338" data-datetime="2019-09-18 18:00">
+                <td class="w-25">
+                    <nobr>Wed, Sep 18</nobr>
+                    <br>
+                    <small class="text-secondary">18:00</small>
+                </td>
+                <td class="w-25">
+                    Chemnitz
+                    <br>
+                    <small class="text-secondary">Germany</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/Symfony-Usergroup-Chemnitz-Sudwestsachsen/events/259891550/">3. Symfony User Group Treffen am 18.09.2019</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">Symfony User Group Chemnitz/Südwestsachsen</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="-81.594360351562" data-latitude="30.333358764648" data-datetime="2019-09-18 18:00">
+                <td class="w-25">
+                    <nobr>Wed, Sep 18</nobr>
+                    <br>
+                    <small class="text-secondary">18:00</small>
+                </td>
+                <td class="w-25">
+                    Jacksonville
+                    <br>
+                    <small class="text-secondary">Florida</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/JaxPHP-JaxWeb/events/hvcwcryzmbxb/">Jax PHP/Web/Drupal - get together</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">Jax PHP/Web/Drupal</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="-75.33829498291" data-latitude="40.091400146484" data-datetime="2019-09-18 19:00">
+                <td class="w-25">
+                    <nobr>Wed, Sep 18</nobr>
+                    <br>
+                    <small class="text-secondary">19:00</small>
+                </td>
+                <td class="w-25">
+                    King of Prussia
+                    <br>
+                    <small class="text-secondary">Pennsylvania</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/phillyphp/events/qpchfpyzmbxb/">Talking about PHP with Philly PHP</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">The Philadelphia Area PHP Meetup Group</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="7.669285774231" data-latitude="45.050239562988" data-datetime="2019-09-18 19:00">
+                <td class="w-25">
+                    <nobr>Wed, Sep 18</nobr>
+                    <br>
+                    <small class="text-secondary">19:00</small>
+                </td>
+                <td class="w-25">
+                    Torino
+                    <br>
+                    <small class="text-secondary">Italy</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/pugTO-PHP-User-Group-Torino/events/264156027/">Le novità del PHP 7.4</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">#pugTO: PHP User Group Torino</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="0.47440698742867" data-latitude="51.741291046143" data-datetime="2019-09-18 19:30">
+                <td class="w-25">
+                    <nobr>Wed, Sep 18</nobr>
+                    <br>
+                    <small class="text-secondary">19:30</small>
+                </td>
+                <td class="w-25">
+                    Chelmsford
+                    <br>
+                    <small class="text-secondary">United Kingdom</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/EssexWebDevelopers/events/sgwvgryzmbxb/">Essex Web Developers Meetup - &quot;An Introduction to Kubernetes&quot;</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">Essex Web Developers</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="138.59996032715" data-latitude="-34.928619384766" data-datetime="2019-09-19 18:00">
+                <td class="w-25">
+                    <nobr>Thu, Sep 19</nobr>
+                    <br>
+                    <small class="text-secondary">18:00</small>
+                </td>
+                <td class="w-25">
+                    Adelaide
+                    <br>
+                    <small class="text-secondary">Australia</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/PHP-Adelaide/events/vxpcxlyzmbzb/">PHP Adelaide User Group Meeting</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">PHP Adelaide</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="16.413772583008" data-latitude="48.232608795166" data-datetime="2019-09-19 18:00">
+                <td class="w-25">
+                    <nobr>Thu, Sep 19</nobr>
+                    <br>
+                    <small class="text-secondary">18:00</small>
+                </td>
+                <td class="w-25">
+                    Vienna
+                    <br>
+                    <small class="text-secondary">Austria</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/Laravel-Frameworkers-Vienna/events/264162777/">Laravel Summer Ending Meetup</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">Laravel Vienna Meetup</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="-85.729606628418" data-latitude="38.257083892822" data-datetime="2019-09-19 18:00">
+                <td class="w-25">
+                    <nobr>Thu, Sep 19</nobr>
+                    <br>
+                    <small class="text-secondary">18:00</small>
+                </td>
+                <td class="w-25">
+                    Louisville
+                    <br>
+                    <small class="text-secondary">Kentucky</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/Louisville-Software-Engineering/events/qfdzgryzmbzb/">Open Code Night</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">Louisville Software Engineering Meetup</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="11.948752403259" data-latitude="57.699775695801" data-datetime="2019-09-19 18:00">
+                <td class="w-25">
+                    <nobr>Thu, Sep 19</nobr>
+                    <br>
+                    <small class="text-secondary">18:00</small>
+                </td>
+                <td class="w-25">
+                    Göteborg
+                    <br>
+                    <small class="text-secondary">Sweden</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/Goteborg-Laravel-Meetup-Fully-Studios/events/264395940/">Laracon Debrief</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">Göteborg Laravel Meetup</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="16.007629394531" data-latitude="45.804504394531" data-datetime="2019-09-19 18:00">
+                <td class="w-25">
+                    <nobr>Thu, Sep 19</nobr>
+                    <br>
+                    <small class="text-secondary">18:00</small>
+                </td>
+                <td class="w-25">
+                    Zagreb
+                    <br>
+                    <small class="text-secondary">Croatia</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/ZgPHP-meetup/events/264621952/">ZgPHP #97</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">ZgPHP meetup</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="1.2876000404358" data-latitude="45.854629516602" data-datetime="2019-09-19 18:30">
+                <td class="w-25">
+                    <nobr>Thu, Sep 19</nobr>
+                    <br>
+                    <small class="text-secondary">18:30</small>
+                </td>
+                <td class="w-25">
+                    Limoges
+                    <br>
+                    <small class="text-secondary">France</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/afup-limoges-php/events/264579778/">ApéroPHP de rentrée</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">Antenne AFUP Limoges : PHP</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="-112.01679992676" data-latitude="40.772136688232" data-datetime="2019-09-19 19:00">
+                <td class="w-25">
+                    <nobr>Thu, Sep 19</nobr>
+                    <br>
+                    <small class="text-secondary">19:00</small>
+                </td>
+                <td class="w-25">
+                    Salt Lake City
+                    <br>
+                    <small class="text-secondary">United States</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/Utah-Laravel/events/264141023/">Coming alive with Livewire</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">Utah Laravel</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="6.9407858848572" data-latitude="50.943634033203" data-datetime="2019-09-19 19:00">
+                <td class="w-25">
+                    <nobr>Thu, Sep 19</nobr>
+                    <br>
+                    <small class="text-secondary">19:00</small>
+                </td>
+                <td class="w-25">
+                    Cologne
+                    <br>
+                    <small class="text-secondary">Germany</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/PHP-Web-Entwicklung-Meetup-Koln/events/263353605/">Sebastian Bergmann - Tools of the Trade</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">PHP / Web-Entwicklung Meetup Köln</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="5.0953130722046" data-latitude="51.558067321777" data-datetime="2019-09-19 19:00">
+                <td class="w-25">
+                    <nobr>Thu, Sep 19</nobr>
+                    <br>
+                    <small class="text-secondary">19:00</small>
+                </td>
+                <td class="w-25">
+                    Tilburg
+                    <br>
+                    <small class="text-secondary">Netherlands</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/BrabantPHP/events/263552216/">BrabantPHP - Tilburg: J. vd Laar - Event Sourcery // R. Slootjes - Serverless</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">BrabantPHP</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="4.8896107673645" data-latitude="52.366317749023" data-datetime="2019-09-19 19:00">
+                <td class="w-25">
+                    <nobr>Thu, Sep 19</nobr>
+                    <br>
+                    <small class="text-secondary">19:00</small>
+                </td>
+                <td class="w-25">
+                    Amsterdam
+                    <br>
+                    <small class="text-secondary">Netherlands</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/AmsterdamPHP/events/dprvbryzmbzb/">Monthly Meeting - September/2019</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">AmsterdamPHP</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="-79.485504150391" data-latitude="44.056102752686" data-datetime="2019-09-19 19:00">
+                <td class="w-25">
+                    <nobr>Thu, Sep 19</nobr>
+                    <br>
+                    <small class="text-secondary">19:00</small>
+                </td>
+                <td class="w-25">
+                    Newmarket
+                    <br>
+                    <small class="text-secondary">Canada</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/York-Region-PHP-User-Group/events/263443780/">Hands-on Introduction to the Laravel Framework</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">York Region PHP User Group</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="100.56087493896" data-latitude="13.812784194946" data-datetime="2019-09-19 19:00">
+                <td class="w-25">
+                    <nobr>Thu, Sep 19</nobr>
+                    <br>
+                    <small class="text-secondary">19:00</small>
+                </td>
+                <td class="w-25">
+                    Khet Chatuchak
+                    <br>
+                    <small class="text-secondary">Thailand</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/Laravel-VueJS/events/264577362/">Laravel 6.0 &amp; Vapor Serverless</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">Laravel/VueJS</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="-47.050975799561" data-latitude="-22.897144317627" data-datetime="2019-09-19 19:00">
+                <td class="w-25">
+                    <nobr>Thu, Sep 19</nobr>
+                    <br>
+                    <small class="text-secondary">19:00</small>
+                </td>
+                <td class="w-25">
+                    Campinas
+                    <br>
+                    <small class="text-secondary">Brazil</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/PHPSP-Campinas/events/lzzltqyzmbzb/">PHPSP Campinas + PUB</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">PHPSP Campinas</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="-111.90465545654" data-latitude="40.440452575684" data-datetime="2019-09-19 19:00">
+                <td class="w-25">
+                    <nobr>Thu, Sep 19</nobr>
+                    <br>
+                    <small class="text-secondary">19:00</small>
+                </td>
+                <td class="w-25">
+                    Lehi
+                    <br>
+                    <small class="text-secondary">Utah</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/Utah-PHP-User-Group/events/wvcsvqyzmbzb/">BDD API Tests with Gherkin and Behat by Mark Niebergall</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">Utah PHP User Group</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="36.2303893" data-latitude="49.9902794" data-datetime="2019-09-19 19:00">
+                <td class="w-25">
+                    <nobr>Thu, Sep 19</nobr>
+                    <br>
+                    <small class="text-secondary">19:00</small>
+                </td>
+                <td class="w-25">
+                    Харків
+                    <br>
+                    <small class="text-secondary">Ukraine</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://dou.ua/calendar/28848/">Kharkiv Speakers’ Corner: PHPStorm Advanced Usage, 19 вересня, Харків</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">Kharkiv Speakers’ Corner: PHPStorm Advanced Usage,</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="32.0587805" data-latitude="49.4447888" data-datetime="2019-09-19 19:00">
+                <td class="w-25">
+                    <nobr>Thu, Sep 19</nobr>
+                    <br>
+                    <small class="text-secondary">19:00</small>
+                </td>
+                <td class="w-25">
+                    Черкаси
+                    <br>
+                    <small class="text-secondary">Ukraine</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://dou.ua/calendar/28559/">Відкриття GeekHub: Season 9, 19 вересня, Черкаси</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">Відкриття GeekHub: Season</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="-43.183444976807" data-latitude="-22.91149520874" data-datetime="2019-09-19 19:00">
+                <td class="w-25">
+                    <nobr>Thu, Sep 19</nobr>
+                    <br>
+                    <small class="text-secondary">19:00</small>
+                </td>
+                <td class="w-25">
+                    Rio de Janeiro
+                    <br>
+                    <small class="text-secondary">Brazil</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/PHP-Rio/events/mqntcqyzmbzb/">Boteco PHP</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">PHP Rio</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="-122.68053436279" data-latitude="45.507038116455" data-datetime="2019-09-20 08:30">
+                <td class="w-25">
+                    <nobr>Fri, Sep 20</nobr>
+                    <br>
+                    <small class="text-secondary">08:30</small>
+                </td>
+                <td class="w-25">
+                    Portland
+                    <br>
+                    <small class="text-secondary">Oregon</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/PDX-PHP/events/264462446/">Cascadia PHP Day 1</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">PHPDX</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="-43.934494018555" data-latitude="-19.916681289673" data-datetime="2019-09-21 08:00">
+                <td class="w-25">
+                    <nobr>Sat, Sep 21</nobr>
+                    <br>
+                    <small class="text-secondary">08:00</small>
+                </td>
+                <td class="w-25">
+                    State of Minas Gerais
+                    <br>
+                    <small class="text-secondary">Brazil</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/PHP-MG/events/262921483/">PHPMG Conference 2019</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">PHPMG</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="85.323959350586" data-latitude="27.717245101929" data-datetime="2019-09-21 08:00">
+                <td class="w-25">
+                    <nobr>Sat, Sep 21</nobr>
+                    <br>
+                    <small class="text-secondary">08:00</small>
+                </td>
+                <td class="w-25">
+                    Kathmandu
+                    <br>
+                    <small class="text-secondary">Nepal</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/phpnepal/events/263677296/">Web Weekend Kathmandu 2019</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">PHP Developers Nepal</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="-122.68053436279" data-latitude="45.507038116455" data-datetime="2019-09-21 09:00">
+                <td class="w-25">
+                    <nobr>Sat, Sep 21</nobr>
+                    <br>
+                    <small class="text-secondary">09:00</small>
+                </td>
+                <td class="w-25">
+                    Portland
+                    <br>
+                    <small class="text-secondary">Oregon</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/PDX-PHP/events/264463650/">Cascadia PHP Conference Day 2</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">PHPDX</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="-77.410438537598" data-latitude="39.415821075439" data-datetime="2019-09-21 10:00">
+                <td class="w-25">
+                    <nobr>Sat, Sep 21</nobr>
+                    <br>
+                    <small class="text-secondary">10:00</small>
+                </td>
+                <td class="w-25">
+                    Frederick
+                    <br>
+                    <small class="text-secondary">Maryland</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/FredWebTech/events/lwlvcqyzmbcc/">Open Workshop — Combined Frederick Technology Groups</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">Frederick Web Technology Group</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="36.2303893" data-latitude="49.9902794" data-datetime="2019-09-21 10:00">
+                <td class="w-25">
+                    <nobr>Sat, Sep 21</nobr>
+                    <br>
+                    <small class="text-secondary">10:00</small>
+                </td>
+                <td class="w-25">
+                    Харьков
+                    <br>
+                    <small class="text-secondary">Ukraine</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://dou.ua/calendar/28652/">Workshop: Современное Symfony приложение с (Vue)JS компонентами, 21 сентября, Харьков</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">Workshop: Современное Symfony приложение с (Vue)JS компонентами,</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="-85.744812011719" data-latitude="38.275436401367" data-datetime="2019-09-21 13:00">
+                <td class="w-25">
+                    <nobr>Sat, Sep 21</nobr>
+                    <br>
+                    <small class="text-secondary">13:00</small>
+                </td>
+                <td class="w-25">
+                    Jeffersonville
+                    <br>
+                    <small class="text-secondary">Indiana</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/Louisville-Software-Engineering/events/lwlwhryzmbcc/">#HackTheVille with Red Hat’s Deven Phillips</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">Louisville Software Engineering Meetup</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="-94.734397888184" data-latitude="38.970943450928" data-datetime="2019-09-21 14:30">
+                <td class="w-25">
+                    <nobr>Sat, Sep 21</nobr>
+                    <br>
+                    <small class="text-secondary">14:30</small>
+                </td>
+                <td class="w-25">
+                    Lenexa
+                    <br>
+                    <small class="text-secondary">Kansas</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/kcphpug/events/bmwtcpyzmbcc/">Coffee Shop Hangout</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">Kansas City&#039;s PHP User Group</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="-71.382438659668" data-latitude="42.407211303711" data-datetime="2019-09-22 00:00">
+                <td class="w-25">
+                    <nobr>Sun, Sep 22</nobr>
+                    <br>
+                    <small class="text-secondary">00:00</small>
+                </td>
+                <td class="w-25">
+                    Virtual
+                    <br>
+                    <small class="text-secondary">Massachusetts</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/bostonphp/events/264011973/">AWS Snack, Season 2</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">Boston PHP</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="17.0326689" data-latitude="51.1089776" data-datetime="2019-09-24 18:30">
+                <td class="w-25">
+                    <nobr>Tue, Sep 24</nobr>
+                    <br>
+                    <small class="text-secondary">18:30</small>
+                </td>
+                <td class="w-25">
+                    Wrocław
+                    <br>
+                    <small class="text-secondary">Poland</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://crossweb.pl/wydarzenia/wroclaw-php-3-wrzesien-2019/">Wrocław PHP #3</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">Wrocław PHP</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="-89.940200805664" data-latitude="35.12174987793" data-datetime="2019-09-24 18:30">
+                <td class="w-25">
+                    <nobr>Tue, Sep 24</nobr>
+                    <br>
+                    <small class="text-secondary">18:30</small>
+                </td>
+                <td class="w-25">
+                    Memphis
+                    <br>
+                    <small class="text-secondary">Tennessee</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/Memphis-PHP-Meetup/events/rpnbppyzmbgc/">Memphis PHP User Group</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">Memphis PHP User Group Meetup</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="-112.06692504883" data-latitude="33.440837860107" data-datetime="2019-09-24 19:00">
+                <td class="w-25">
+                    <nobr>Tue, Sep 24</nobr>
+                    <br>
+                    <small class="text-secondary">19:00</small>
+                </td>
+                <td class="w-25">
+                    Phoenix
+                    <br>
+                    <small class="text-secondary">Arizona</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/azPHPUG/events/rrzlqqyzmbgc/">azPHP Meetup: UX for Backend Developers</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">azPHP</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="3.9128069877625" data-latitude="43.607479095459" data-datetime="2019-09-24 19:00">
+                <td class="w-25">
+                    <nobr>Tue, Sep 24</nobr>
+                    <br>
+                    <small class="text-secondary">19:00</small>
+                </td>
+                <td class="w-25">
+                    Montpellier
+                    <br>
+                    <small class="text-secondary">France</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/Montpellier-PHP-Meetup/events/264584161/">Pour la rentrée, montons une CI.</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">AFUP Montpellier</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="-77.023284912109" data-latitude="38.931861877441" data-datetime="2019-09-24 19:00">
+                <td class="w-25">
+                    <nobr>Tue, Sep 24</nobr>
+                    <br>
+                    <small class="text-secondary">19:00</small>
+                </td>
+                <td class="w-25">
+                    Washington
+                    <br>
+                    <small class="text-secondary">District Of Columbia</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/DC-PHP/events/ttdzwqyzmbgc/">DC PHP Beverage Subgroup (in DC)</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">DC PHP Developer&#039;s Community</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="8.6682262420654" data-latitude="50.108577728271" data-datetime="2019-09-24 19:30">
+                <td class="w-25">
+                    <nobr>Tue, Sep 24</nobr>
+                    <br>
+                    <small class="text-secondary">19:30</small>
+                </td>
+                <td class="w-25">
+                    Frankfurt am Main
+                    <br>
+                    <small class="text-secondary">Germany</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/Symfony-User-Group-Frankfurt-am-Main/events/264240329/">Symfony Meetup IV / 2019</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">Symfony User Group Frankfurt am Main</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="-86.796211242676" data-latitude="36.159385681152" data-datetime="2019-09-25 11:00">
+                <td class="w-25">
+                    <nobr>Wed, Sep 25</nobr>
+                    <br>
+                    <small class="text-secondary">11:00</small>
+                </td>
+                <td class="w-25">
+                    Nashville
+                    <br>
+                    <small class="text-secondary">Tennessee</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/nashvillephp/events/mklnwqyzmbhc/">Nashville PHP/WordPress BBQ Lunch</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">Nashville PHP</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="5.1747522354126" data-latitude="52.226108551025" data-datetime="2019-09-25 17:00">
+                <td class="w-25">
+                    <nobr>Wed, Sep 25</nobr>
+                    <br>
+                    <small class="text-secondary">17:00</small>
+                </td>
+                <td class="w-25">
+                    Hilversum
+                    <br>
+                    <small class="text-secondary">Netherlands</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/developersHilversum/events/263288718/">Introduction into the capabilities of Twitch Extensions</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">Developers Hilversum</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="9.978048324585" data-latitude="53.54455947876" data-datetime="2019-09-25 18:00">
+                <td class="w-25">
+                    <nobr>Wed, Sep 25</nobr>
+                    <br>
+                    <small class="text-secondary">18:00</small>
+                </td>
+                <td class="w-25">
+                    Hamburg
+                    <br>
+                    <small class="text-secondary">Germany</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/phpughh/events/264395999/">Special: Architecture Kata Workshop</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">PHP-Usergroup Hamburg (PHPUGHH)</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="9.17209815979" data-latitude="48.771419525146" data-datetime="2019-09-25 18:30">
+                <td class="w-25">
+                    <nobr>Wed, Sep 25</nobr>
+                    <br>
+                    <small class="text-secondary">18:30</small>
+                </td>
+                <td class="w-25">
+                    Stuttgart
+                    <br>
+                    <small class="text-secondary">Germany</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/PHP-User-Group-Stuttgart/events/263264669/">3. Meetup PHPUG Stuttgart 2019</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">PHP User Group Stuttgart</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="11.654782295227" data-latitude="48.186199188232" data-datetime="2019-09-25 18:30">
+                <td class="w-25">
+                    <nobr>Wed, Sep 25</nobr>
+                    <br>
+                    <small class="text-secondary">18:30</small>
+                </td>
+                <td class="w-25">
+                    Munich
+                    <br>
+                    <small class="text-secondary">Germany</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/phpugmunich/events/mttrspyzmbhc/">PHP User Group Munich Meeting</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">PHP User Group Munich</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="9.1950483322144" data-latitude="45.456718444824" data-datetime="2019-09-25 19:00">
+                <td class="w-25">
+                    <nobr>Wed, Sep 25</nobr>
+                    <br>
+                    <small class="text-secondary">19:00</small>
+                </td>
+                <td class="w-25">
+                    Milano
+                    <br>
+                    <small class="text-secondary">Italy</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/MilanoPHP/events/264334527/">Batch processing con Doctrine</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">#pugMi: PHP User Group Milano</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="4.4354629516602" data-latitude="51.201091766357" data-datetime="2019-09-25 19:00">
+                <td class="w-25">
+                    <nobr>Wed, Sep 25</nobr>
+                    <br>
+                    <small class="text-secondary">19:00</small>
+                </td>
+                <td class="w-25">
+                    Antwerpen
+                    <br>
+                    <small class="text-secondary">Belgium</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/fullstackantwerp/events/vtkdppyzmbhc/">September Meetup at Computer Futures</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">Full Stack Antwerp</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="-123.10958862305" data-latitude="49.281768798828" data-datetime="2019-09-26 18:00">
+                <td class="w-25">
+                    <nobr>Thu, Sep 26</nobr>
+                    <br>
+                    <small class="text-secondary">18:00</small>
+                </td>
+                <td class="w-25">
+                    Vancouver
+                    <br>
+                    <small class="text-secondary">Canada</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/Vancouver-PHP/events/264753733/">PHP Meetup: September 26th 2019</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">Vancouver PHP</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="-78.794403076172" data-latitude="35.85147857666" data-datetime="2019-09-26 18:00">
+                <td class="w-25">
+                    <nobr>Thu, Sep 26</nobr>
+                    <br>
+                    <small class="text-secondary">18:00</small>
+                </td>
+                <td class="w-25">
+                    Morrisville
+                    <br>
+                    <small class="text-secondary">North Carolina</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/trianglephp/events/mccslqyzmbzb/">PHP</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">TrianglePHP</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="19.055891036987" data-latitude="47.509677886963" data-datetime="2019-09-26 18:15">
+                <td class="w-25">
+                    <nobr>Thu, Sep 26</nobr>
+                    <br>
+                    <small class="text-secondary">18:15</small>
+                </td>
+                <td class="w-25">
+                    Budapest
+                    <br>
+                    <small class="text-secondary">Hungary</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/PHP-Roundtable-Budapest/events/264578483/">PHP Roundtable #38</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">PHP Roundtable Budapest</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="21.0067265" data-latitude="52.2319237" data-datetime="2019-09-26 18:30">
+                <td class="w-25">
+                    <nobr>Thu, Sep 26</nobr>
+                    <br>
+                    <small class="text-secondary">18:30</small>
+                </td>
+                <td class="w-25">
+                    Warszawa
+                    <br>
+                    <small class="text-secondary">Poland</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://crossweb.pl/wydarzenia/phpers-warszawa-19/">PHPers Warszawa #19</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">PHPers Warszawa</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="21.0067265" data-latitude="52.2319237" data-datetime="2019-09-26 18:30">
+                <td class="w-25">
+                    <nobr>Thu, Sep 26</nobr>
+                    <br>
+                    <small class="text-secondary">18:30</small>
+                </td>
+                <td class="w-25">
+                    Warszawa
+                    <br>
+                    <small class="text-secondary">Poland</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://crossweb.pl/wydarzenia/ship-it-6-warszawa/">ship.it #6: Warszawa</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">ship.it</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="21.022016525269" data-latitude="52.268169403076" data-datetime="2019-09-26 18:30">
+                <td class="w-25">
+                    <nobr>Thu, Sep 26</nobr>
+                    <br>
+                    <small class="text-secondary">18:30</small>
+                </td>
+                <td class="w-25">
+                    Warszawa
+                    <br>
+                    <small class="text-secondary">Poland</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/PHPers-Warszawa/events/264480695/">PHPers Warszawa #19</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">PHPers Warszawa</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="-3.1723959445953" data-latitude="51.481876373291" data-datetime="2019-09-26 18:30">
+                <td class="w-25">
+                    <nobr>Thu, Sep 26</nobr>
+                    <br>
+                    <small class="text-secondary">18:30</small>
+                </td>
+                <td class="w-25">
+                    Cardiff
+                    <br>
+                    <small class="text-secondary">United Kingdom</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/PHP-South-Wales/events/264731393/">Put Your Docker Image on a Diet</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">PHP South Wales</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="-1.9127470254898" data-latitude="52.486179351807" data-datetime="2019-09-26 19:00">
+                <td class="w-25">
+                    <nobr>Thu, Sep 26</nobr>
+                    <br>
+                    <small class="text-secondary">19:00</small>
+                </td>
+                <td class="w-25">
+                    Birmingham
+                    <br>
+                    <small class="text-secondary">United Kingdom</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/brumphp/events/264716058/">brumPHP September: Neal Brooks, PHP Anti-patterns</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">BrumPHP</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="0.33746901154518" data-latitude="46.580715179443" data-datetime="2019-09-26 19:00">
+                <td class="w-25">
+                    <nobr>Thu, Sep 26</nobr>
+                    <br>
+                    <small class="text-secondary">19:00</small>
+                </td>
+                <td class="w-25">
+                    Poitiers
+                    <br>
+                    <small class="text-secondary">France</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/afup-poitiers-php/events/264581528/">APERO PHP - Structurer une application  métier avec Symfony</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">Antenne AFUP Poitiers : PHP</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="-43.17399597168" data-latitude="-22.91088104248" data-datetime="2019-09-26 19:00">
+                <td class="w-25">
+                    <nobr>Thu, Sep 26</nobr>
+                    <br>
+                    <small class="text-secondary">19:00</small>
+                </td>
+                <td class="w-25">
+                    Rio de Janeiro
+                    <br>
+                    <small class="text-secondary">Brazil</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/PHP-Rio/events/tgljxpyzmbjc/">Meetup PHPRio</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">PHP Rio</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="30.308170318604" data-latitude="59.957233428955" data-datetime="2019-09-26 19:00">
+                <td class="w-25">
+                    <nobr>Thu, Sep 26</nobr>
+                    <br>
+                    <small class="text-secondary">19:00</small>
+                </td>
+                <td class="w-25">
+                    Sankt-Peterburg
+                    <br>
+                    <small class="text-secondary">Russia</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/symfoniacs-spb/events/264744562/">Symfony St. Petersburg Meetup #7 - ITMO (26 sept 2019)</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">Symfoniacs SPB</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="-0.55524897575378" data-latitude="44.829250335693" data-datetime="2019-09-26 19:30">
+                <td class="w-25">
+                    <nobr>Thu, Sep 26</nobr>
+                    <br>
+                    <small class="text-secondary">19:30</small>
+                </td>
+                <td class="w-25">
+                    Bordeaux
+                    <br>
+                    <small class="text-secondary">France</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/Bordeaux-PHP-Meetup/events/264307234/">Meetup PHP #30 : L&#039;e-commerce sans accroc avec Sylius</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">Bordeaux PHP Meetup</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="-42.558391571045" data-latitude="-19.471170425415" data-datetime="2019-09-28 09:00">
+                <td class="w-25">
+                    <nobr>Sat, Sep 28</nobr>
+                    <br>
+                    <small class="text-secondary">09:00</small>
+                </td>
+                <td class="w-25">
+                    Ipatinga
+                    <br>
+                    <small class="text-secondary">Brazil</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/PHP-MG/events/264551689/">PHPMG Talks [Vale do Aço] - CQRS + Testes E2E</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">PHPMG</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="7.5749020576477" data-latitude="51.924179077148" data-datetime="2019-09-28 09:15">
+                <td class="w-25">
+                    <nobr>Sat, Sep 28</nobr>
+                    <br>
+                    <small class="text-secondary">09:15</small>
+                </td>
+                <td class="w-25">
+                    Münster
+                    <br>
+                    <small class="text-secondary">Germany</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/phpugms/events/264684962/">(Special Event) Kostenloses Lasertag Event sponsored by RAIDBOXES</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">PHP-Usergroup Münster</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="139.7134552002" data-latitude="35.642364501953" data-datetime="2019-09-28 14:00">
+                <td class="w-25">
+                    <nobr>Sat, Sep 28</nobr>
+                    <br>
+                    <small class="text-secondary">14:00</small>
+                </td>
+                <td class="w-25">
+                    Tokyo
+                    <br>
+                    <small class="text-secondary">Japan</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/devjapan/events/264509210/">Tokyo Developers Meetup 55</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">Dev Japan</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="15.7791356" data-latitude="50.0385812" data-datetime="2019-09-28 15:00">
+                <td class="w-25">
+                    <nobr>Sat, Sep 28</nobr>
+                    <br>
+                    <small class="text-secondary">15:00</small>
+                </td>
+                <td class="w-25">
+                    Pardubice
+                    <br>
+                    <small class="text-secondary">Czech Republic</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="http://www.posobota.cz">Poslední Sobota 106</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">Posobota</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="4.4682240486145" data-latitude="51.908317565918" data-datetime="2019-09-28 16:00">
+                <td class="w-25">
+                    <nobr>Sat, Sep 28</nobr>
+                    <br>
+                    <small class="text-secondary">16:00</small>
+                </td>
+                <td class="w-25">
+                    Rotterdam
+                    <br>
+                    <small class="text-secondary">Netherlands</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/010PHP/events/264686998/">010PHP: After Summer BBQ!</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">010PHP</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="30.5241361" data-latitude="50.4500336" data-datetime="2019-09-28 19:00">
+                <td class="w-25">
+                    <nobr>Sat, Sep 28</nobr>
+                    <br>
+                    <small class="text-secondary">19:00</small>
+                </td>
+                <td class="w-25">
+                    Kyiv
+                    <br>
+                    <small class="text-secondary">Ukraine</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://dou.ua/calendar/28813/">MageCONF 2019, 28 September, Kyiv</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">MageCONF</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="-71.382438659668" data-latitude="42.407211303711" data-datetime="2019-09-29 00:00">
+                <td class="w-25">
+                    <nobr>Sun, Sep 29</nobr>
+                    <br>
+                    <small class="text-secondary">00:00</small>
+                </td>
+                <td class="w-25">
+                    Virtual
+                    <br>
+                    <small class="text-secondary">Massachusetts</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/bostonphp/events/264505638/">Social Side Dish, Season 1</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">Boston PHP</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="-86.801834106445" data-latitude="35.957515716553" data-datetime="2019-10-01 11:30">
+                <td class="w-25">
+                    <nobr>Tue, Oct 01</nobr>
+                    <br>
+                    <small class="text-secondary">11:30</small>
+                </td>
+                <td class="w-25">
+                    Franklin
+                    <br>
+                    <small class="text-secondary">Tennessee</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/nashvillephp/events/ggbppqyznbcb/">Nashville PHP South Lunch</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">Nashville PHP</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="10.025159835815" data-latitude="53.584529876709" data-datetime="2019-10-01 18:30">
+                <td class="w-25">
+                    <nobr>Tue, Oct 01</nobr>
+                    <br>
+                    <small class="text-secondary">18:30</small>
+                </td>
+                <td class="w-25">
+                    Hamburg
+                    <br>
+                    <small class="text-secondary">Germany</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/sfughh/events/qmlmcfyznbcb/">Treffen der Symfony User Group Hamburg</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">Symfony User Group Hamburg</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="-77.410438537598" data-latitude="39.415821075439" data-datetime="2019-10-01 18:30">
+                <td class="w-25">
+                    <nobr>Tue, Oct 01</nobr>
+                    <br>
+                    <small class="text-secondary">18:30</small>
+                </td>
+                <td class="w-25">
+                    Frederick
+                    <br>
+                    <small class="text-secondary">Maryland</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/FredWebTech/events/bmxdqpyznbcb/">Presentation: Technology Meetup (Topic to be determined)</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">Frederick Web Technology Group</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="-85.333053588867" data-latitude="35.105934143066" data-datetime="2019-10-02 12:00">
+                <td class="w-25">
+                    <nobr>Wed, Oct 02</nobr>
+                    <br>
+                    <small class="text-secondary">12:00</small>
+                </td>
+                <td class="w-25">
+                    Chattanooga
+                    <br>
+                    <small class="text-secondary">Tennessee</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/chattanoogaphp/events/zcthrqyznbdb/">PHP and Laravel monthly meetup</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">Chattanooga PHP Developers</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="-2.10621" data-latitude="57.1457" data-datetime="2019-10-02 18:30">
+                <td class="w-25">
+                    <nobr>Wed, Oct 02</nobr>
+                    <br>
+                    <small class="text-secondary">18:30</small>
+                </td>
+                <td class="w-25">
+                    Aberdeen
+                    <br>
+                    <small class="text-secondary">United Kingdom</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://opentechcalendar.co.uk/event/8994-aberdeen-php-user-group-monthly-meetup">Aberdeen PHP User Group monthly meetup</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">Aberdeen PHP User Group monthly meetup</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="-6.2491869926453" data-latitude="53.349758148193" data-datetime="2019-10-02 19:00">
+                <td class="w-25">
+                    <nobr>Wed, Oct 02</nobr>
+                    <br>
+                    <small class="text-secondary">19:00</small>
+                </td>
+                <td class="w-25">
+                    Dublin
+                    <br>
+                    <small class="text-secondary">Ireland</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/Laravel-Vuejs-Dublin/events/frwqhqyznbdb/">Laravel Dublin</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">Laravel Dublin</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="172.64967346191" data-latitude="-43.526737213135" data-datetime="2019-10-02 19:00">
+                <td class="w-25">
+                    <nobr>Wed, Oct 02</nobr>
+                    <br>
+                    <small class="text-secondary">19:00</small>
+                </td>
+                <td class="w-25">
+                    Christchurch
+                    <br>
+                    <small class="text-secondary">New Zealand</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/SilverStripe-Christchurch-Meetup/events/264713665/">Christchurch SilverStripe Meetup – October</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">SilverStripe Christchurch Meetup</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="12.571780204773" data-latitude="44.066207885742" data-datetime="2019-10-02 20:30">
+                <td class="w-25">
+                    <nobr>Wed, Oct 02</nobr>
+                    <br>
+                    <small class="text-secondary">20:30</small>
+                </td>
+                <td class="w-25">
+                    Rimini
+                    <br>
+                    <small class="text-secondary">Italy</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/PUG-Romagna-PHP-User-Group-Romagnolo/events/264493514/">PHP testing: esempi pratici con phpunit</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">#pugRomagna: PHP User Group Romagnolo</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="10.092081069946" data-latitude="56.175132751465" data-datetime="2019-10-03 17:15">
+                <td class="w-25">
+                    <nobr>Thu, Oct 03</nobr>
+                    <br>
+                    <small class="text-secondary">17:15</small>
+                </td>
+                <td class="w-25">
+                    Tilst
+                    <br>
+                    <small class="text-secondary">Denmark</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/PHPJutland/events/264426950/">PHPJutland - Scaleable image hosting using Google App Engine and Images API</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">PHPJutland</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="6.1929697990417" data-latitude="52.236747741699" data-datetime="2019-10-03 18:00">
+                <td class="w-25">
+                    <nobr>Thu, Oct 03</nobr>
+                    <br>
+                    <small class="text-secondary">18:00</small>
+                </td>
+                <td class="w-25">
+                    Deventer
+                    <br>
+                    <small class="text-secondary">Netherlands</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/DeventerPHP/events/wvgvgqyznbfb/">DeventerPHP - TBD</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">DeventerPHP</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="-85.729606628418" data-latitude="38.257083892822" data-datetime="2019-10-03 18:00">
+                <td class="w-25">
+                    <nobr>Thu, Oct 03</nobr>
+                    <br>
+                    <small class="text-secondary">18:00</small>
+                </td>
+                <td class="w-25">
+                    Louisville
+                    <br>
+                    <small class="text-secondary">Kentucky</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/Louisville-Software-Engineering/events/qfdzgryznbfb/">Open Code Night</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">Louisville Software Engineering Meetup</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="-115.2135925293" data-latitude="36.066555023193" data-datetime="2019-10-03 18:00">
+                <td class="w-25">
+                    <nobr>Thu, Oct 03</nobr>
+                    <br>
+                    <small class="text-secondary">18:00</small>
+                </td>
+                <td class="w-25">
+                    Las Vegas
+                    <br>
+                    <small class="text-secondary">Nevada</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/PHP-Vegas/events/pdlccryznbfb/">State Machines &amp; California Consumer Privacy Act (CCPA)</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">PHP Vegas</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="25.31224822998" data-latitude="54.699935913086" data-datetime="2019-10-03 19:00">
+                <td class="w-25">
+                    <nobr>Thu, Oct 03</nobr>
+                    <br>
+                    <small class="text-secondary">19:00</small>
+                </td>
+                <td class="w-25">
+                    Vilnius
+                    <br>
+                    <small class="text-secondary">Lithuania</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/vilniusphp/events/hmjwhryznbfb/">Vilnius PHP</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">Vilnius PHP Meetups</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="6.569179058075" data-latitude="53.214248657227" data-datetime="2019-10-03 19:30">
+                <td class="w-25">
+                    <nobr>Thu, Oct 03</nobr>
+                    <br>
+                    <small class="text-secondary">19:30</small>
+                </td>
+                <td class="w-25">
+                    Groningen
+                    <br>
+                    <small class="text-secondary">Netherlands</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/GroningenPHP/events/fgjkvlyznbfb/">PHP Meetup Oktober/Talk by.........</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">GroningenPHP</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="30.44207572937" data-latitude="50.450244903564" data-datetime="2019-10-05 09:30">
+                <td class="w-25">
+                    <nobr>Sat, Oct 05</nobr>
+                    <br>
+                    <small class="text-secondary">09:30</small>
+                </td>
+                <td class="w-25">
+                    Kyiv
+                    <br>
+                    <small class="text-secondary">Ukraine</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/Fwdays/events/263675025/">Конференція Highload fwdays&#039;19</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">Fwdays</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="-116.21148681641" data-latitude="43.59130859375" data-datetime="2019-10-07 18:15">
+                <td class="w-25">
+                    <nobr>Mon, Oct 07</nobr>
+                    <br>
+                    <small class="text-secondary">18:15</small>
+                </td>
+                <td class="w-25">
+                    Boise
+                    <br>
+                    <small class="text-secondary">Idaho</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/Idaho-PHP/events/lhkthlyznbkb/">Topic: TBD</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">Idaho PHP User Group</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="-1.9062889814377" data-latitude="50.724056243896" data-datetime="2019-10-07 18:30">
+                <td class="w-25">
+                    <nobr>Mon, Oct 07</nobr>
+                    <br>
+                    <small class="text-secondary">18:30</small>
+                </td>
+                <td class="w-25">
+                    Poole
+                    <br>
+                    <small class="text-secondary">United Kingdom</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/PHPDorset/events/gkjvxqyznbkb/">PHP Dorset Monthly Meetup</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">PHP Dorset</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="-86.793197631836" data-latitude="36.14497756958" data-datetime="2019-10-08 18:00">
+                <td class="w-25">
+                    <nobr>Tue, Oct 08</nobr>
+                    <br>
+                    <small class="text-secondary">18:00</small>
+                </td>
+                <td class="w-25">
+                    Nashville 
+                    <br>
+                    <small class="text-secondary">Tennessee</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/nashvillephp/events/khfqgryznblb/">Monthly PHP Meetup</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">Nashville PHP</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="151.20687866211" data-latitude="-33.866813659668" data-datetime="2019-10-08 18:00">
+                <td class="w-25">
+                    <nobr>Tue, Oct 08</nobr>
+                    <br>
+                    <small class="text-secondary">18:00</small>
+                </td>
+                <td class="w-25">
+                    Sydney
+                    <br>
+                    <small class="text-secondary">Australia</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/PHP-Laravel-Framework-Sydney/events/263956171/">Laravel October - TBA</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">PHP Laravel Framework Sydney</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="9.9936819076538" data-latitude="53.551086425781" data-datetime="2019-10-08 18:30">
+                <td class="w-25">
+                    <nobr>Tue, Oct 08</nobr>
+                    <br>
+                    <small class="text-secondary">18:30</small>
+                </td>
+                <td class="w-25">
+                    Hamburg
+                    <br>
+                    <small class="text-secondary">Germany</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/phpughh/events/fpnmzmyznblb/">Treffen der PHP-Usergroup Hamburg</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">PHP-Usergroup Hamburg (PHPUGHH)</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="-43.931632995605" data-latitude="-19.929538726807" data-datetime="2019-10-08 19:00">
+                <td class="w-25">
+                    <nobr>Tue, Oct 08</nobr>
+                    <br>
+                    <small class="text-secondary">19:00</small>
+                </td>
+                <td class="w-25">
+                    Belo Horizonte
+                    <br>
+                    <small class="text-secondary">Brazil</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/PHP-MG/events/lvgvbryznblb/">beer.php</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">PHPMG</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="-46.654830932617" data-latitude="-23.56495475769" data-datetime="2019-10-10 19:00">
+                <td class="w-25">
+                    <nobr>Thu, Oct 10</nobr>
+                    <br>
+                    <small class="text-secondary">19:00</small>
+                </td>
+                <td class="w-25">
+                    São Paulo
+                    <br>
+                    <small class="text-secondary">Brazil</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/php-sp/events/hpjhgryznbnb/">PHPSP Pub</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">PHPSP</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="-79.37956237793" data-latitude="43.653839111328" data-datetime="2019-10-10 19:00">
+                <td class="w-25">
+                    <nobr>Thu, Oct 10</nobr>
+                    <br>
+                    <small class="text-secondary">19:00</small>
+                </td>
+                <td class="w-25">
+                    Toronto
+                    <br>
+                    <small class="text-secondary">Canada</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/GTA-PHP-User-Group-Toronto/events/xxkpfryznbnb/">Topic To Be Determined</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">GTA PHP User Group</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="15.587129592896" data-latitude="48.40843963623" data-datetime="2019-10-10 19:00">
+                <td class="w-25">
+                    <nobr>Thu, Oct 10</nobr>
+                    <br>
+                    <small class="text-secondary">19:00</small>
+                </td>
+                <td class="w-25">
+                    Krems an der Donau
+                    <br>
+                    <small class="text-secondary">Austria</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/stripecon/events/261798934/">StripeConEU 2019</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">StripeCon - SilverStripe Europe Conference</small>
+                </td>
+            </tr>
+            </table>
+
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous"></script>
+
+<script src="/assets/js/menu-area-pick.js?v=872811780"></script>
+
+<script src="https://unpkg.com/leaflet@1.3.2/dist/leaflet.js"
+        integrity="sha512-2fA79E27MOeBgLjmBrtAgM/20clVSV8vJERaW/EcnnWCVGwQRazzKtQS1kIusCZv1PtaQxosDZZ0F1Oastl55w=="
+        crossorigin=""></script>
+
+<script type="text/javascript">
+    var icons = {
+        // pick from: https://github.com/pointhi/leaflet-color-markers
+        green: 'https://cdn.rawgit.com/pointhi/leaflet-color-markers/master/img/marker-icon-green.png',
+        orange: 'https://cdn.rawgit.com/pointhi/leaflet-color-markers/master/img/marker-icon-orange.png',
+        red: 'https://cdn.rawgit.com/pointhi/leaflet-color-markers/master/img/marker-icon-red.png'
+    };
+
+    var markers = [
+        
+        {
+                        "type": "green",
+                        "title": "[CodeCamp] Laravel Part II: Intro to SOLID",
+                        "position": [14.581197738647, 121.05240631104],
+                        "date": "09-14",
+                        "location": "Mandaluyong",
+                        "url": "https://www.meetup.com/Laravel-Philippines/events/264304168/",
+                        // for filtering
+                        "datetime": "2019-09-14 08:30",
+                    },
+                                                            
+                                    {
+                        "type": "green",
+                        "title": "Meetup PHPRS em Taquara",
+                        "position": [-29.639127731323, -50.786968231201],
+                        "date": "09-14",
+                        "location": "Taquara",
+                        "url": "https://www.meetup.com/PHP-RS/events/264413329/",
+                        // for filtering
+                        "datetime": "2019-09-14 09:00",
+                    },
+                                                            
+                                    {
+                        "type": "green",
+                        "title": "Всеукраинская конференция CODEiD – PHP Odessa Conf #6, 14 сентября, Одесса",
+                        "position": [46.4873195, 30.7392776],
+                        "date": "09-14",
+                        "location": "Одесса",
+                        "url": "https://dou.ua/calendar/28385/",
+                        // for filtering
+                        "datetime": "2019-09-14 19:00",
+                    },
+                                                            
+                                    {
+                        "type": "green",
+                        "title": "Git Lunch, Season 3",
+                        "position": [42.347156524658, -71.078895568848],
+                        "date": "09-15",
+                        "location": "Virtual",
+                        "url": "https://www.meetup.com/bostonphp/events/262398658/",
+                        // for filtering
+                        "datetime": "2019-09-15 00:00",
+                    },
+                                                            
+                                    {
+                        "type": "green",
+                        "title": "PHP Boot Camp | EPAM University Program, 15 вересня, Київ",
+                        "position": [50.4500336, 30.5241361],
+                        "date": "09-15",
+                        "location": "Київ",
+                        "url": "https://dou.ua/calendar/28604/",
+                        // for filtering
+                        "datetime": "2019-09-15 19:00",
+                    },
+                                                            
+                                    {
+                        "type": "green",
+                        "title": "Soirée Mentorat : et si on parlait code ?",
+                        "position": [43.605895996094, 3.9209470748901],
+                        "date": "09-16",
+                        "location": "Montpellier",
+                        "url": "https://www.meetup.com/Montpellier-PHP-Meetup/events/264521334/",
+                        // for filtering
+                        "datetime": "2019-09-16 19:00",
+                    },
+                                                            
+                                    {
+                        "type": "green",
+                        "title": "Sync or Swim",
+                        "position": [54.970584869385, -1.6159969568253],
+                        "date": "09-17",
+                        "location": "Newcastle Upon Tyne",
+                        "url": "https://www.meetup.com/phpnortheast/events/264367155/",
+                        // for filtering
+                        "datetime": "2019-09-17 18:00",
+                    },
+                                                            
+                                    {
+                        "type": "green",
+                        "title": "Accelerated Mobile Pages (AMP) and Laravel Backpack / contributing back to OSS",
+                        "position": [-33.918788909912, 18.42892074585],
+                        "date": "09-17",
+                        "location": "Cape Town",
+                        "url": "https://www.meetup.com/Cape-Town-PHP-Group/events/264715076/",
+                        // for filtering
+                        "datetime": "2019-09-17 18:00",
+                    },
+                                                            
+                                    {
+                        "type": "green",
+                        "title": "Monthly Meetup",
+                        "position": [45.529090881348, -122.68419647217],
+                        "date": "09-17",
+                        "location": "Portland",
+                        "url": "https://www.meetup.com/PDX-PHP/events/tpjrgryzmbwb/",
+                        // for filtering
+                        "datetime": "2019-09-17 18:30",
+                    },
+                                                            
+                                    {
+                        "type": "green",
+                        "title": "PHP+Beer DT",
+                        "position": [39.768821716309, -86.153495788574],
+                        "date": "09-17",
+                        "location": "Indianapolis",
+                        "url": "https://www.meetup.com/indyphp/events/swphmqyzmbwb/",
+                        // for filtering
+                        "datetime": "2019-09-17 18:30",
+                    },
+                                                            
+                                    {
+                        "type": "green",
+                        "title": "Monthly Meetup (September 2019)",
+                        "position": [53.212200164795, 5.8119149208069],
+                        "date": "09-17",
+                        "location": "Leeuwarden",
+                        "url": "https://www.meetup.com/PHP-FRL/events/264489876/",
+                        // for filtering
+                        "datetime": "2019-09-17 19:00",
+                    },
+                                                            
+                                    {
+                        "type": "green",
+                        "title": "PHPAmersfoort September 2019",
+                        "position": [52.177448272705, 5.410463809967],
+                        "date": "09-17",
+                        "location": "Amersfoort",
+                        "url": "https://www.meetup.com/PHPAmersfoort/events/cjgglmyzmbnb/",
+                        // for filtering
+                        "datetime": "2019-09-17 19:00",
+                    },
+                                                            
+                                    {
+                        "type": "green",
+                        "title": "[Lille] Apéro PHP le 17/09 à l&#039;Hybride",
+                        "position": [50.626003265381, 3.0660009384155],
+                        "date": "09-17",
+                        "location": "Lille",
+                        "url": "https://www.meetup.com/afup-hauts-de-france-php/events/264612904/",
+                        // for filtering
+                        "datetime": "2019-09-17 19:00",
+                    },
+                                                            
+                                    {
+                        "type": "green",
+                        "title": "62. Meetup PHPUG Rheinhessen",
+                        "position": [50.013652801514, 8.2465839385986],
+                        "date": "09-17",
+                        "location": "Mainz",
+                        "url": "https://www.meetup.com/PHP-User-Group-Rheinhessen/events/264363695/",
+                        // for filtering
+                        "datetime": "2019-09-17 19:00",
+                    },
+                                                            
+                                    {
+                        "type": "green",
+                        "title": "AFUP Septembre 2019",
+                        "position": [48.883628845215, 2.2984800338745],
+                        "date": "09-17",
+                        "location": "Paris",
+                        "url": "https://www.meetup.com/afup-paris-php/events/264685998/",
+                        // for filtering
+                        "datetime": "2019-09-17 19:00",
+                    },
+                                                            
+                                    {
+                        "type": "green",
+                        "title": "September meetup bij X-plose",
+                        "position": [51.214382171631, 3.1966319084167],
+                        "date": "09-17",
+                        "location": "Brugge",
+                        "url": "https://www.meetup.com/php-wvl/events/nphhxmyzmbwb/",
+                        // for filtering
+                        "datetime": "2019-09-17 19:30",
+                    },
+                                                            
+                                    {
+                        "type": "green",
+                        "title": "AST in Wonderland",
+                        "position": [51.418262481689, 5.4317798614502],
+                        "date": "09-18",
+                        "location": "Eindhoven",
+                        "url": "https://www.meetup.com/PHP-Laravel-Eindhoven/events/264057802/",
+                        // for filtering
+                        "datetime": "2019-09-18 18:00",
+                    },
+                                                            
+                                    {
+                        "type": "green",
+                        "title": "3. Symfony User Group Treffen am 18.09.2019",
+                        "position": [50.835605621338, 12.930836677551],
+                        "date": "09-18",
+                        "location": "Chemnitz",
+                        "url": "https://www.meetup.com/Symfony-Usergroup-Chemnitz-Sudwestsachsen/events/259891550/",
+                        // for filtering
+                        "datetime": "2019-09-18 18:00",
+                    },
+                                                            
+                                    {
+                        "type": "green",
+                        "title": "Jax PHP/Web/Drupal - get together",
+                        "position": [30.333358764648, -81.594360351562],
+                        "date": "09-18",
+                        "location": "Jacksonville",
+                        "url": "https://www.meetup.com/JaxPHP-JaxWeb/events/hvcwcryzmbxb/",
+                        // for filtering
+                        "datetime": "2019-09-18 18:00",
+                    },
+                                                            
+                                    {
+                        "type": "green",
+                        "title": "Talking about PHP with Philly PHP",
+                        "position": [40.091400146484, -75.33829498291],
+                        "date": "09-18",
+                        "location": "King of Prussia",
+                        "url": "https://www.meetup.com/phillyphp/events/qpchfpyzmbxb/",
+                        // for filtering
+                        "datetime": "2019-09-18 19:00",
+                    },
+                                                            
+                                    {
+                        "type": "green",
+                        "title": "Le novità del PHP 7.4",
+                        "position": [45.050239562988, 7.669285774231],
+                        "date": "09-18",
+                        "location": "Torino",
+                        "url": "https://www.meetup.com/pugTO-PHP-User-Group-Torino/events/264156027/",
+                        // for filtering
+                        "datetime": "2019-09-18 19:00",
+                    },
+                                                            
+                                    {
+                        "type": "green",
+                        "title": "Essex Web Developers Meetup - &quot;An Introduction to Kubernetes&quot;",
+                        "position": [51.741291046143, 0.47440698742867],
+                        "date": "09-18",
+                        "location": "Chelmsford",
+                        "url": "https://www.meetup.com/EssexWebDevelopers/events/sgwvgryzmbxb/",
+                        // for filtering
+                        "datetime": "2019-09-18 19:30",
+                    },
+                                                            
+                                    {
+                        "type": "green",
+                        "title": "PHP Adelaide User Group Meeting",
+                        "position": [-34.928619384766, 138.59996032715],
+                        "date": "09-19",
+                        "location": "Adelaide",
+                        "url": "https://www.meetup.com/PHP-Adelaide/events/vxpcxlyzmbzb/",
+                        // for filtering
+                        "datetime": "2019-09-19 18:00",
+                    },
+                                                            
+                                    {
+                        "type": "green",
+                        "title": "Laravel Summer Ending Meetup",
+                        "position": [48.232608795166, 16.413772583008],
+                        "date": "09-19",
+                        "location": "Vienna",
+                        "url": "https://www.meetup.com/Laravel-Frameworkers-Vienna/events/264162777/",
+                        // for filtering
+                        "datetime": "2019-09-19 18:00",
+                    },
+                                                            
+                                    {
+                        "type": "green",
+                        "title": "Open Code Night",
+                        "position": [38.257083892822, -85.729606628418],
+                        "date": "09-19",
+                        "location": "Louisville",
+                        "url": "https://www.meetup.com/Louisville-Software-Engineering/events/qfdzgryzmbzb/",
+                        // for filtering
+                        "datetime": "2019-09-19 18:00",
+                    },
+                                                            
+                                    {
+                        "type": "green",
+                        "title": "Laracon Debrief",
+                        "position": [57.699775695801, 11.948752403259],
+                        "date": "09-19",
+                        "location": "Göteborg",
+                        "url": "https://www.meetup.com/Goteborg-Laravel-Meetup-Fully-Studios/events/264395940/",
+                        // for filtering
+                        "datetime": "2019-09-19 18:00",
+                    },
+                                                            
+                                    {
+                        "type": "green",
+                        "title": "ZgPHP #97",
+                        "position": [45.804504394531, 16.007629394531],
+                        "date": "09-19",
+                        "location": "Zagreb",
+                        "url": "https://www.meetup.com/ZgPHP-meetup/events/264621952/",
+                        // for filtering
+                        "datetime": "2019-09-19 18:00",
+                    },
+                                                            
+                                    {
+                        "type": "green",
+                        "title": "ApéroPHP de rentrée",
+                        "position": [45.854629516602, 1.2876000404358],
+                        "date": "09-19",
+                        "location": "Limoges",
+                        "url": "https://www.meetup.com/afup-limoges-php/events/264579778/",
+                        // for filtering
+                        "datetime": "2019-09-19 18:30",
+                    },
+                                                            
+                                    {
+                        "type": "green",
+                        "title": "Coming alive with Livewire",
+                        "position": [40.772136688232, -112.01679992676],
+                        "date": "09-19",
+                        "location": "Salt Lake City",
+                        "url": "https://www.meetup.com/Utah-Laravel/events/264141023/",
+                        // for filtering
+                        "datetime": "2019-09-19 19:00",
+                    },
+                                                            
+                                    {
+                        "type": "green",
+                        "title": "Sebastian Bergmann - Tools of the Trade",
+                        "position": [50.943634033203, 6.9407858848572],
+                        "date": "09-19",
+                        "location": "Cologne",
+                        "url": "https://www.meetup.com/PHP-Web-Entwicklung-Meetup-Koln/events/263353605/",
+                        // for filtering
+                        "datetime": "2019-09-19 19:00",
+                    },
+                                                            
+                                    {
+                        "type": "green",
+                        "title": "BrabantPHP - Tilburg: J. vd Laar - Event Sourcery // R. Slootjes - Serverless",
+                        "position": [51.558067321777, 5.0953130722046],
+                        "date": "09-19",
+                        "location": "Tilburg",
+                        "url": "https://www.meetup.com/BrabantPHP/events/263552216/",
+                        // for filtering
+                        "datetime": "2019-09-19 19:00",
+                    },
+                                                            
+                                    {
+                        "type": "green",
+                        "title": "Monthly Meeting - September/2019",
+                        "position": [52.366317749023, 4.8896107673645],
+                        "date": "09-19",
+                        "location": "Amsterdam",
+                        "url": "https://www.meetup.com/AmsterdamPHP/events/dprvbryzmbzb/",
+                        // for filtering
+                        "datetime": "2019-09-19 19:00",
+                    },
+                                                            
+                                    {
+                        "type": "green",
+                        "title": "Hands-on Introduction to the Laravel Framework",
+                        "position": [44.056102752686, -79.485504150391],
+                        "date": "09-19",
+                        "location": "Newmarket",
+                        "url": "https://www.meetup.com/York-Region-PHP-User-Group/events/263443780/",
+                        // for filtering
+                        "datetime": "2019-09-19 19:00",
+                    },
+                                                            
+                                    {
+                        "type": "green",
+                        "title": "Laravel 6.0 &amp; Vapor Serverless",
+                        "position": [13.812784194946, 100.56087493896],
+                        "date": "09-19",
+                        "location": "Khet Chatuchak",
+                        "url": "https://www.meetup.com/Laravel-VueJS/events/264577362/",
+                        // for filtering
+                        "datetime": "2019-09-19 19:00",
+                    },
+                                                            
+                                    {
+                        "type": "green",
+                        "title": "PHPSP Campinas + PUB",
+                        "position": [-22.897144317627, -47.050975799561],
+                        "date": "09-19",
+                        "location": "Campinas",
+                        "url": "https://www.meetup.com/PHPSP-Campinas/events/lzzltqyzmbzb/",
+                        // for filtering
+                        "datetime": "2019-09-19 19:00",
+                    },
+                                                            
+                                    {
+                        "type": "green",
+                        "title": "BDD API Tests with Gherkin and Behat by Mark Niebergall",
+                        "position": [40.440452575684, -111.90465545654],
+                        "date": "09-19",
+                        "location": "Lehi",
+                        "url": "https://www.meetup.com/Utah-PHP-User-Group/events/wvcsvqyzmbzb/",
+                        // for filtering
+                        "datetime": "2019-09-19 19:00",
+                    },
+                                                            
+                                    {
+                        "type": "green",
+                        "title": "Kharkiv Speakers’ Corner: PHPStorm Advanced Usage, 19 вересня, Харків",
+                        "position": [49.9902794, 36.2303893],
+                        "date": "09-19",
+                        "location": "Харків",
+                        "url": "https://dou.ua/calendar/28848/",
+                        // for filtering
+                        "datetime": "2019-09-19 19:00",
+                    },
+                                                            
+                                    {
+                        "type": "green",
+                        "title": "Відкриття GeekHub: Season 9, 19 вересня, Черкаси",
+                        "position": [49.4447888, 32.0587805],
+                        "date": "09-19",
+                        "location": "Черкаси",
+                        "url": "https://dou.ua/calendar/28559/",
+                        // for filtering
+                        "datetime": "2019-09-19 19:00",
+                    },
+                                                            
+                                    {
+                        "type": "green",
+                        "title": "Boteco PHP",
+                        "position": [-22.91149520874, -43.183444976807],
+                        "date": "09-19",
+                        "location": "Rio de Janeiro",
+                        "url": "https://www.meetup.com/PHP-Rio/events/mqntcqyzmbzb/",
+                        // for filtering
+                        "datetime": "2019-09-19 19:00",
+                    },
+                                                            
+                                    {
+                        "type": "green",
+                        "title": "Cascadia PHP Day 1",
+                        "position": [45.507038116455, -122.68053436279],
+                        "date": "09-20",
+                        "location": "Portland",
+                        "url": "https://www.meetup.com/PDX-PHP/events/264462446/",
+                        // for filtering
+                        "datetime": "2019-09-20 08:30",
+                    },
+                                                            
+                                    {
+                        "type": "orange",
+                        "title": "PHPMG Conference 2019",
+                        "position": [-19.916681289673, -43.934494018555],
+                        "date": "09-21",
+                        "location": "State of Minas Gerais",
+                        "url": "https://www.meetup.com/PHP-MG/events/262921483/",
+                        // for filtering
+                        "datetime": "2019-09-21 08:00",
+                    },
+                                                            
+                                    {
+                        "type": "orange",
+                        "title": "Web Weekend Kathmandu 2019",
+                        "position": [27.717245101929, 85.323959350586],
+                        "date": "09-21",
+                        "location": "Kathmandu",
+                        "url": "https://www.meetup.com/phpnepal/events/263677296/",
+                        // for filtering
+                        "datetime": "2019-09-21 08:00",
+                    },
+                                                            
+                                    {
+                        "type": "orange",
+                        "title": "Cascadia PHP Conference Day 2",
+                        "position": [45.507038116455, -122.68053436279],
+                        "date": "09-21",
+                        "location": "Portland",
+                        "url": "https://www.meetup.com/PDX-PHP/events/264463650/",
+                        // for filtering
+                        "datetime": "2019-09-21 09:00",
+                    },
+                                                            
+                                    {
+                        "type": "orange",
+                        "title": "Open Workshop — Combined Frederick Technology Groups",
+                        "position": [39.415821075439, -77.410438537598],
+                        "date": "09-21",
+                        "location": "Frederick",
+                        "url": "https://www.meetup.com/FredWebTech/events/lwlvcqyzmbcc/",
+                        // for filtering
+                        "datetime": "2019-09-21 10:00",
+                    },
+                                                            
+                                    {
+                        "type": "orange",
+                        "title": "Workshop: Современное Symfony приложение с (Vue)JS компонентами, 21 сентября, Харьков",
+                        "position": [49.9902794, 36.2303893],
+                        "date": "09-21",
+                        "location": "Харьков",
+                        "url": "https://dou.ua/calendar/28652/",
+                        // for filtering
+                        "datetime": "2019-09-21 10:00",
+                    },
+                                                            
+                                    {
+                        "type": "orange",
+                        "title": "#HackTheVille with Red Hat’s Deven Phillips",
+                        "position": [38.275436401367, -85.744812011719],
+                        "date": "09-21",
+                        "location": "Jeffersonville",
+                        "url": "https://www.meetup.com/Louisville-Software-Engineering/events/lwlwhryzmbcc/",
+                        // for filtering
+                        "datetime": "2019-09-21 13:00",
+                    },
+                                                            
+                                    {
+                        "type": "orange",
+                        "title": "Coffee Shop Hangout",
+                        "position": [38.970943450928, -94.734397888184],
+                        "date": "09-21",
+                        "location": "Lenexa",
+                        "url": "https://www.meetup.com/kcphpug/events/bmwtcpyzmbcc/",
+                        // for filtering
+                        "datetime": "2019-09-21 14:30",
+                    },
+                                                            
+                                    {
+                        "type": "orange",
+                        "title": "AWS Snack, Season 2",
+                        "position": [42.407211303711, -71.382438659668],
+                        "date": "09-22",
+                        "location": "Virtual",
+                        "url": "https://www.meetup.com/bostonphp/events/264011973/",
+                        // for filtering
+                        "datetime": "2019-09-22 00:00",
+                    },
+                                                            
+                                    {
+                        "type": "orange",
+                        "title": "Wrocław PHP #3",
+                        "position": [51.1089776, 17.0326689],
+                        "date": "09-24",
+                        "location": "Wrocław",
+                        "url": "https://crossweb.pl/wydarzenia/wroclaw-php-3-wrzesien-2019/",
+                        // for filtering
+                        "datetime": "2019-09-24 18:30",
+                    },
+                                                            
+                                    {
+                        "type": "orange",
+                        "title": "Memphis PHP User Group",
+                        "position": [35.12174987793, -89.940200805664],
+                        "date": "09-24",
+                        "location": "Memphis",
+                        "url": "https://www.meetup.com/Memphis-PHP-Meetup/events/rpnbppyzmbgc/",
+                        // for filtering
+                        "datetime": "2019-09-24 18:30",
+                    },
+                                                            
+                                    {
+                        "type": "orange",
+                        "title": "azPHP Meetup: UX for Backend Developers",
+                        "position": [33.440837860107, -112.06692504883],
+                        "date": "09-24",
+                        "location": "Phoenix",
+                        "url": "https://www.meetup.com/azPHPUG/events/rrzlqqyzmbgc/",
+                        // for filtering
+                        "datetime": "2019-09-24 19:00",
+                    },
+                                                            
+                                    {
+                        "type": "orange",
+                        "title": "Pour la rentrée, montons une CI.",
+                        "position": [43.607479095459, 3.9128069877625],
+                        "date": "09-24",
+                        "location": "Montpellier",
+                        "url": "https://www.meetup.com/Montpellier-PHP-Meetup/events/264584161/",
+                        // for filtering
+                        "datetime": "2019-09-24 19:00",
+                    },
+                                                            
+                                    {
+                        "type": "orange",
+                        "title": "DC PHP Beverage Subgroup (in DC)",
+                        "position": [38.931861877441, -77.023284912109],
+                        "date": "09-24",
+                        "location": "Washington",
+                        "url": "https://www.meetup.com/DC-PHP/events/ttdzwqyzmbgc/",
+                        // for filtering
+                        "datetime": "2019-09-24 19:00",
+                    },
+                                                            
+                                    {
+                        "type": "orange",
+                        "title": "Symfony Meetup IV / 2019",
+                        "position": [50.108577728271, 8.6682262420654],
+                        "date": "09-24",
+                        "location": "Frankfurt am Main",
+                        "url": "https://www.meetup.com/Symfony-User-Group-Frankfurt-am-Main/events/264240329/",
+                        // for filtering
+                        "datetime": "2019-09-24 19:30",
+                    },
+                                                            
+                                    {
+                        "type": "orange",
+                        "title": "Nashville PHP/WordPress BBQ Lunch",
+                        "position": [36.159385681152, -86.796211242676],
+                        "date": "09-25",
+                        "location": "Nashville",
+                        "url": "https://www.meetup.com/nashvillephp/events/mklnwqyzmbhc/",
+                        // for filtering
+                        "datetime": "2019-09-25 11:00",
+                    },
+                                                            
+                                    {
+                        "type": "orange",
+                        "title": "Introduction into the capabilities of Twitch Extensions",
+                        "position": [52.226108551025, 5.1747522354126],
+                        "date": "09-25",
+                        "location": "Hilversum",
+                        "url": "https://www.meetup.com/developersHilversum/events/263288718/",
+                        // for filtering
+                        "datetime": "2019-09-25 17:00",
+                    },
+                                                            
+                                    {
+                        "type": "orange",
+                        "title": "Special: Architecture Kata Workshop",
+                        "position": [53.54455947876, 9.978048324585],
+                        "date": "09-25",
+                        "location": "Hamburg",
+                        "url": "https://www.meetup.com/phpughh/events/264395999/",
+                        // for filtering
+                        "datetime": "2019-09-25 18:00",
+                    },
+                                                            
+                                    {
+                        "type": "orange",
+                        "title": "3. Meetup PHPUG Stuttgart 2019",
+                        "position": [48.771419525146, 9.17209815979],
+                        "date": "09-25",
+                        "location": "Stuttgart",
+                        "url": "https://www.meetup.com/PHP-User-Group-Stuttgart/events/263264669/",
+                        // for filtering
+                        "datetime": "2019-09-25 18:30",
+                    },
+                                                            
+                                    {
+                        "type": "orange",
+                        "title": "PHP User Group Munich Meeting",
+                        "position": [48.186199188232, 11.654782295227],
+                        "date": "09-25",
+                        "location": "Munich",
+                        "url": "https://www.meetup.com/phpugmunich/events/mttrspyzmbhc/",
+                        // for filtering
+                        "datetime": "2019-09-25 18:30",
+                    },
+                                                            
+                                    {
+                        "type": "orange",
+                        "title": "Batch processing con Doctrine",
+                        "position": [45.456718444824, 9.1950483322144],
+                        "date": "09-25",
+                        "location": "Milano",
+                        "url": "https://www.meetup.com/MilanoPHP/events/264334527/",
+                        // for filtering
+                        "datetime": "2019-09-25 19:00",
+                    },
+                                                            
+                                    {
+                        "type": "orange",
+                        "title": "September Meetup at Computer Futures",
+                        "position": [51.201091766357, 4.4354629516602],
+                        "date": "09-25",
+                        "location": "Antwerpen",
+                        "url": "https://www.meetup.com/fullstackantwerp/events/vtkdppyzmbhc/",
+                        // for filtering
+                        "datetime": "2019-09-25 19:00",
+                    },
+                                                            
+                                    {
+                        "type": "orange",
+                        "title": "PHP Meetup: September 26th 2019",
+                        "position": [49.281768798828, -123.10958862305],
+                        "date": "09-26",
+                        "location": "Vancouver",
+                        "url": "https://www.meetup.com/Vancouver-PHP/events/264753733/",
+                        // for filtering
+                        "datetime": "2019-09-26 18:00",
+                    },
+                                                            
+                                    {
+                        "type": "orange",
+                        "title": "PHP",
+                        "position": [35.85147857666, -78.794403076172],
+                        "date": "09-26",
+                        "location": "Morrisville",
+                        "url": "https://www.meetup.com/trianglephp/events/mccslqyzmbzb/",
+                        // for filtering
+                        "datetime": "2019-09-26 18:00",
+                    },
+                                                            
+                                    {
+                        "type": "orange",
+                        "title": "PHP Roundtable #38",
+                        "position": [47.509677886963, 19.055891036987],
+                        "date": "09-26",
+                        "location": "Budapest",
+                        "url": "https://www.meetup.com/PHP-Roundtable-Budapest/events/264578483/",
+                        // for filtering
+                        "datetime": "2019-09-26 18:15",
+                    },
+                                                            
+                                    {
+                        "type": "orange",
+                        "title": "PHPers Warszawa #19",
+                        "position": [52.2319237, 21.0067265],
+                        "date": "09-26",
+                        "location": "Warszawa",
+                        "url": "https://crossweb.pl/wydarzenia/phpers-warszawa-19/",
+                        // for filtering
+                        "datetime": "2019-09-26 18:30",
+                    },
+                                                            
+                                    {
+                        "type": "orange",
+                        "title": "ship.it #6: Warszawa",
+                        "position": [52.2319237, 21.0067265],
+                        "date": "09-26",
+                        "location": "Warszawa",
+                        "url": "https://crossweb.pl/wydarzenia/ship-it-6-warszawa/",
+                        // for filtering
+                        "datetime": "2019-09-26 18:30",
+                    },
+                                                            
+                                    {
+                        "type": "orange",
+                        "title": "PHPers Warszawa #19",
+                        "position": [52.268169403076, 21.022016525269],
+                        "date": "09-26",
+                        "location": "Warszawa",
+                        "url": "https://www.meetup.com/PHPers-Warszawa/events/264480695/",
+                        // for filtering
+                        "datetime": "2019-09-26 18:30",
+                    },
+                                                            
+                                    {
+                        "type": "orange",
+                        "title": "Put Your Docker Image on a Diet",
+                        "position": [51.481876373291, -3.1723959445953],
+                        "date": "09-26",
+                        "location": "Cardiff",
+                        "url": "https://www.meetup.com/PHP-South-Wales/events/264731393/",
+                        // for filtering
+                        "datetime": "2019-09-26 18:30",
+                    },
+                                                            
+                                    {
+                        "type": "orange",
+                        "title": "brumPHP September: Neal Brooks, PHP Anti-patterns",
+                        "position": [52.486179351807, -1.9127470254898],
+                        "date": "09-26",
+                        "location": "Birmingham",
+                        "url": "https://www.meetup.com/brumphp/events/264716058/",
+                        // for filtering
+                        "datetime": "2019-09-26 19:00",
+                    },
+                                                            
+                                    {
+                        "type": "orange",
+                        "title": "APERO PHP - Structurer une application  métier avec Symfony",
+                        "position": [46.580715179443, 0.33746901154518],
+                        "date": "09-26",
+                        "location": "Poitiers",
+                        "url": "https://www.meetup.com/afup-poitiers-php/events/264581528/",
+                        // for filtering
+                        "datetime": "2019-09-26 19:00",
+                    },
+                                                            
+                                    {
+                        "type": "orange",
+                        "title": "Meetup PHPRio",
+                        "position": [-22.91088104248, -43.17399597168],
+                        "date": "09-26",
+                        "location": "Rio de Janeiro",
+                        "url": "https://www.meetup.com/PHP-Rio/events/tgljxpyzmbjc/",
+                        // for filtering
+                        "datetime": "2019-09-26 19:00",
+                    },
+                                                            
+                                    {
+                        "type": "orange",
+                        "title": "Symfony St. Petersburg Meetup #7 - ITMO (26 sept 2019)",
+                        "position": [59.957233428955, 30.308170318604],
+                        "date": "09-26",
+                        "location": "Sankt-Peterburg",
+                        "url": "https://www.meetup.com/symfoniacs-spb/events/264744562/",
+                        // for filtering
+                        "datetime": "2019-09-26 19:00",
+                    },
+                                                            
+                                    {
+                        "type": "orange",
+                        "title": "Meetup PHP #30 : L&#039;e-commerce sans accroc avec Sylius",
+                        "position": [44.829250335693, -0.55524897575378],
+                        "date": "09-26",
+                        "location": "Bordeaux",
+                        "url": "https://www.meetup.com/Bordeaux-PHP-Meetup/events/264307234/",
+                        // for filtering
+                        "datetime": "2019-09-26 19:30",
+                    },
+                                                            
+                                    {
+                        "type": "red",
+                        "title": "PHPMG Talks [Vale do Aço] - CQRS + Testes E2E",
+                        "position": [-19.471170425415, -42.558391571045],
+                        "date": "09-28",
+                        "location": "Ipatinga",
+                        "url": "https://www.meetup.com/PHP-MG/events/264551689/",
+                        // for filtering
+                        "datetime": "2019-09-28 09:00",
+                    },
+                                                            
+                                    {
+                        "type": "red",
+                        "title": "(Special Event) Kostenloses Lasertag Event sponsored by RAIDBOXES",
+                        "position": [51.924179077148, 7.5749020576477],
+                        "date": "09-28",
+                        "location": "Münster",
+                        "url": "https://www.meetup.com/phpugms/events/264684962/",
+                        // for filtering
+                        "datetime": "2019-09-28 09:15",
+                    },
+                                                            
+                                    {
+                        "type": "red",
+                        "title": "Tokyo Developers Meetup 55",
+                        "position": [35.642364501953, 139.7134552002],
+                        "date": "09-28",
+                        "location": "Tokyo",
+                        "url": "https://www.meetup.com/devjapan/events/264509210/",
+                        // for filtering
+                        "datetime": "2019-09-28 14:00",
+                    },
+                                                            
+                                    {
+                        "type": "red",
+                        "title": "Poslední Sobota 106",
+                        "position": [50.0385812, 15.7791356],
+                        "date": "09-28",
+                        "location": "Pardubice",
+                        "url": "http://www.posobota.cz",
+                        // for filtering
+                        "datetime": "2019-09-28 15:00",
+                    },
+                                                            
+                                    {
+                        "type": "red",
+                        "title": "010PHP: After Summer BBQ!",
+                        "position": [51.908317565918, 4.4682240486145],
+                        "date": "09-28",
+                        "location": "Rotterdam",
+                        "url": "https://www.meetup.com/010PHP/events/264686998/",
+                        // for filtering
+                        "datetime": "2019-09-28 16:00",
+                    },
+                                                            
+                                    {
+                        "type": "red",
+                        "title": "MageCONF 2019, 28 September, Kyiv",
+                        "position": [50.4500336, 30.5241361],
+                        "date": "09-28",
+                        "location": "Kyiv",
+                        "url": "https://dou.ua/calendar/28813/",
+                        // for filtering
+                        "datetime": "2019-09-28 19:00",
+                    },
+                                                            
+                                    {
+                        "type": "red",
+                        "title": "Social Side Dish, Season 1",
+                        "position": [42.407211303711, -71.382438659668],
+                        "date": "09-29",
+                        "location": "Virtual",
+                        "url": "https://www.meetup.com/bostonphp/events/264505638/",
+                        // for filtering
+                        "datetime": "2019-09-29 00:00",
+                    },
+                                                            
+                                    {
+                        "type": "red",
+                        "title": "Nashville PHP South Lunch",
+                        "position": [35.957515716553, -86.801834106445],
+                        "date": "10-01",
+                        "location": "Franklin",
+                        "url": "https://www.meetup.com/nashvillephp/events/ggbppqyznbcb/",
+                        // for filtering
+                        "datetime": "2019-10-01 11:30",
+                    },
+                                                            
+                                    {
+                        "type": "red",
+                        "title": "Treffen der Symfony User Group Hamburg",
+                        "position": [53.584529876709, 10.025159835815],
+                        "date": "10-01",
+                        "location": "Hamburg",
+                        "url": "https://www.meetup.com/sfughh/events/qmlmcfyznbcb/",
+                        // for filtering
+                        "datetime": "2019-10-01 18:30",
+                    },
+                                                            
+                                    {
+                        "type": "red",
+                        "title": "Presentation: Technology Meetup (Topic to be determined)",
+                        "position": [39.415821075439, -77.410438537598],
+                        "date": "10-01",
+                        "location": "Frederick",
+                        "url": "https://www.meetup.com/FredWebTech/events/bmxdqpyznbcb/",
+                        // for filtering
+                        "datetime": "2019-10-01 18:30",
+                    },
+                                                            
+                                    {
+                        "type": "red",
+                        "title": "PHP and Laravel monthly meetup",
+                        "position": [35.105934143066, -85.333053588867],
+                        "date": "10-02",
+                        "location": "Chattanooga",
+                        "url": "https://www.meetup.com/chattanoogaphp/events/zcthrqyznbdb/",
+                        // for filtering
+                        "datetime": "2019-10-02 12:00",
+                    },
+                                                            
+                                    {
+                        "type": "red",
+                        "title": "Aberdeen PHP User Group monthly meetup",
+                        "position": [57.1457, -2.10621],
+                        "date": "10-02",
+                        "location": "Aberdeen",
+                        "url": "https://opentechcalendar.co.uk/event/8994-aberdeen-php-user-group-monthly-meetup",
+                        // for filtering
+                        "datetime": "2019-10-02 18:30",
+                    },
+                                                            
+                                    {
+                        "type": "red",
+                        "title": "Laravel Dublin",
+                        "position": [53.349758148193, -6.2491869926453],
+                        "date": "10-02",
+                        "location": "Dublin",
+                        "url": "https://www.meetup.com/Laravel-Vuejs-Dublin/events/frwqhqyznbdb/",
+                        // for filtering
+                        "datetime": "2019-10-02 19:00",
+                    },
+                                                            
+                                    {
+                        "type": "red",
+                        "title": "Christchurch SilverStripe Meetup – October",
+                        "position": [-43.526737213135, 172.64967346191],
+                        "date": "10-02",
+                        "location": "Christchurch",
+                        "url": "https://www.meetup.com/SilverStripe-Christchurch-Meetup/events/264713665/",
+                        // for filtering
+                        "datetime": "2019-10-02 19:00",
+                    },
+                                                            
+                                    {
+                        "type": "red",
+                        "title": "PHP testing: esempi pratici con phpunit",
+                        "position": [44.066207885742, 12.571780204773],
+                        "date": "10-02",
+                        "location": "Rimini",
+                        "url": "https://www.meetup.com/PUG-Romagna-PHP-User-Group-Romagnolo/events/264493514/",
+                        // for filtering
+                        "datetime": "2019-10-02 20:30",
+                    },
+                                                            
+                                    {
+                        "type": "red",
+                        "title": "PHPJutland - Scaleable image hosting using Google App Engine and Images API",
+                        "position": [56.175132751465, 10.092081069946],
+                        "date": "10-03",
+                        "location": "Tilst",
+                        "url": "https://www.meetup.com/PHPJutland/events/264426950/",
+                        // for filtering
+                        "datetime": "2019-10-03 17:15",
+                    },
+                                                            
+                                    {
+                        "type": "red",
+                        "title": "DeventerPHP - TBD",
+                        "position": [52.236747741699, 6.1929697990417],
+                        "date": "10-03",
+                        "location": "Deventer",
+                        "url": "https://www.meetup.com/DeventerPHP/events/wvgvgqyznbfb/",
+                        // for filtering
+                        "datetime": "2019-10-03 18:00",
+                    },
+                                                            
+                                    {
+                        "type": "red",
+                        "title": "Open Code Night",
+                        "position": [38.257083892822, -85.729606628418],
+                        "date": "10-03",
+                        "location": "Louisville",
+                        "url": "https://www.meetup.com/Louisville-Software-Engineering/events/qfdzgryznbfb/",
+                        // for filtering
+                        "datetime": "2019-10-03 18:00",
+                    },
+                                                            
+                                    {
+                        "type": "red",
+                        "title": "State Machines &amp; California Consumer Privacy Act (CCPA)",
+                        "position": [36.066555023193, -115.2135925293],
+                        "date": "10-03",
+                        "location": "Las Vegas",
+                        "url": "https://www.meetup.com/PHP-Vegas/events/pdlccryznbfb/",
+                        // for filtering
+                        "datetime": "2019-10-03 18:00",
+                    },
+                                                            
+                                    {
+                        "type": "red",
+                        "title": "Vilnius PHP",
+                        "position": [54.699935913086, 25.31224822998],
+                        "date": "10-03",
+                        "location": "Vilnius",
+                        "url": "https://www.meetup.com/vilniusphp/events/hmjwhryznbfb/",
+                        // for filtering
+                        "datetime": "2019-10-03 19:00",
+                    },
+                                                            
+                                    {
+                        "type": "red",
+                        "title": "PHP Meetup Oktober/Talk by.........",
+                        "position": [53.214248657227, 6.569179058075],
+                        "date": "10-03",
+                        "location": "Groningen",
+                        "url": "https://www.meetup.com/GroningenPHP/events/fgjkvlyznbfb/",
+                        // for filtering
+                        "datetime": "2019-10-03 19:30",
+                    },
+                                                            
+                                    {
+                        "type": "red",
+                        "title": "Конференція Highload fwdays&#039;19",
+                        "position": [50.450244903564, 30.44207572937],
+                        "date": "10-05",
+                        "location": "Kyiv",
+                        "url": "https://www.meetup.com/Fwdays/events/263675025/",
+                        // for filtering
+                        "datetime": "2019-10-05 09:30",
+                    },
+                                                            
+                                    {
+                        "type": "red",
+                        "title": "Topic: TBD",
+                        "position": [43.59130859375, -116.21148681641],
+                        "date": "10-07",
+                        "location": "Boise",
+                        "url": "https://www.meetup.com/Idaho-PHP/events/lhkthlyznbkb/",
+                        // for filtering
+                        "datetime": "2019-10-07 18:15",
+                    },
+                                                            
+                                    {
+                        "type": "red",
+                        "title": "PHP Dorset Monthly Meetup",
+                        "position": [50.724056243896, -1.9062889814377],
+                        "date": "10-07",
+                        "location": "Poole",
+                        "url": "https://www.meetup.com/PHPDorset/events/gkjvxqyznbkb/",
+                        // for filtering
+                        "datetime": "2019-10-07 18:30",
+                    },
+                                                            
+                                    {
+                        "type": "red",
+                        "title": "Monthly PHP Meetup",
+                        "position": [36.14497756958, -86.793197631836],
+                        "date": "10-08",
+                        "location": "Nashville ",
+                        "url": "https://www.meetup.com/nashvillephp/events/khfqgryznblb/",
+                        // for filtering
+                        "datetime": "2019-10-08 18:00",
+                    },
+                                                            
+                                    {
+                        "type": "red",
+                        "title": "Laravel October - TBA",
+                        "position": [-33.866813659668, 151.20687866211],
+                        "date": "10-08",
+                        "location": "Sydney",
+                        "url": "https://www.meetup.com/PHP-Laravel-Framework-Sydney/events/263956171/",
+                        // for filtering
+                        "datetime": "2019-10-08 18:00",
+                    },
+                                                            
+                                    {
+                        "type": "red",
+                        "title": "Treffen der PHP-Usergroup Hamburg",
+                        "position": [53.551086425781, 9.9936819076538],
+                        "date": "10-08",
+                        "location": "Hamburg",
+                        "url": "https://www.meetup.com/phpughh/events/fpnmzmyznblb/",
+                        // for filtering
+                        "datetime": "2019-10-08 18:30",
+                    },
+                                                            
+                                    {
+                        "type": "red",
+                        "title": "beer.php",
+                        "position": [-19.929538726807, -43.931632995605],
+                        "date": "10-08",
+                        "location": "Belo Horizonte",
+                        "url": "https://www.meetup.com/PHP-MG/events/lvgvbryznblb/",
+                        // for filtering
+                        "datetime": "2019-10-08 19:00",
+                    },
+                                                            
+                                    {
+                        "type": "red",
+                        "title": "PHPSP Pub",
+                        "position": [-23.56495475769, -46.654830932617],
+                        "date": "10-10",
+                        "location": "São Paulo",
+                        "url": "https://www.meetup.com/php-sp/events/hpjhgryznbnb/",
+                        // for filtering
+                        "datetime": "2019-10-10 19:00",
+                    },
+                                                            
+                                    {
+                        "type": "red",
+                        "title": "Topic To Be Determined",
+                        "position": [43.653839111328, -79.37956237793],
+                        "date": "10-10",
+                        "location": "Toronto",
+                        "url": "https://www.meetup.com/GTA-PHP-User-Group-Toronto/events/xxkpfryznbnb/",
+                        // for filtering
+                        "datetime": "2019-10-10 19:00",
+                    },
+                                                            
+                                    {
+                        "type": "red",
+                        "title": "StripeConEU 2019",
+                        "position": [48.40843963623, 15.587129592896],
+                        "date": "10-10",
+                        "location": "Krems an der Donau",
+                        "url": "https://www.meetup.com/stripecon/events/261798934/",
+                        // for filtering
+                        "datetime": "2019-10-10 19:00",
+                    }
+    ];
+
+    var grouped = {};
+
+    var tresholdDate = new Date();
+    // go 2 hours in the future, so the running meetup is discoverable; e.g. when comming late like me :)
+    tresholdDate.setHours(tresholdDate.getHours() - 2);
+    var tresholdDateTime = Date.parse(tresholdDate);
+
+    for (var i in markers) {
+        var marker = markers[i];
+
+        // is in the past?
+        var meetupDateTime = Date.parse(marker.datetime);
+        if (meetupDateTime < tresholdDateTime) {
+            continue;
+        }
+
+        // group meetups in one location
+        if (typeof grouped[marker.location] == 'undefined') {
+            grouped[marker.location] = {
+                type: marker.type,
+                position: marker.position,
+                markers: []
+            };
+        }
+
+        grouped[marker.location].markers.push(marker);
+    }
+
+    var map = L.map('mapid');
+
+    // fit to bounds, so pc and mobile have same content
+    // https://leafletjs.com/reference-1.3.2.html#latlngbounds
+
+    // reconstruction from serialized object is not completely working, so we need to restore it manually
+    var restoreBoundFromString = function(stringBound) {
+        stringBound = stringBound.replace(/%22/g, '"');
+        pastBounds = JSON.parse(stringBound);
+
+        return L.latLngBounds(
+            L.latLng(pastBounds._northEast.lat, pastBounds._northEast.lng),
+            L.latLng(pastBounds._southWest.lat, pastBounds._southWest.lng)
+        );
+    };
+
+    // get url bounds
+    var pastBounds = window.localStorage.getItem('bounds');
+
+    // @see https://stackoverflow.com/a/36444134/1348344
+    var isRefreshed = performance.navigation.type;
+
+    if (get('bounds') && isRefreshed === 0)  {
+        var boundsAsString = get('bounds');
+
+        map.fitBounds(restoreBoundFromString(boundsAsString));
+    } else if (pastBounds) {
+        map.fitBounds(restoreBoundFromString(pastBounds));
+    } else {
+        // default map - the whole world
+        map.setView([25, 0], 2);
+    }
+
+    // ref https://github.com/php-ug/php.ug/issues/221#issuecomment-437917289
+    var restoreDislocation = function(map) {
+        var currentCenter = map.getCenter();
+        if (currentCenter.lng > 300 || currentCenter.lng < -300) {
+            // default map - the whole world
+            alert('Whoa, you fell of the main map! Lets get back to center.');
+            map.setView([25, 0], 2);
+        }
+    };
+
+    restoreDislocation(map);
+
+
+    // store past location when map mooves
+    map.on('moveend', function(e) {
+        var bounds = map.getBounds();
+        // objects needs to serialize, since only string can be saved: https://stackoverflow.com/a/2010948/1348344
+        restoreDislocation(map);
+
+        var boundsAsString = boundsToString(bounds);
+        window.localStorage.setItem('bounds', boundsAsString);
+    });
+
+    // required and nice to have promotion to great tool
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(map);
+
+    // @see https://stackoverflow.com/a/1199420/1348344
+    String.prototype.truncate = String.prototype.truncate ||
+        function(n){
+            return (this.length > n) ? this.substr(0, n-1) + '&hellip;' : this;
+        };
+
+    for (var i in grouped) {
+        var group = grouped[i];
+
+        let [first] = group.markers;
+        var description = '<div class="text-center mb-3" style="width:450px">📍&nbsp;&nbsp;'
+            + first.location
+            + "</div>";
+
+        for (var j in group.markers) {
+            marker = group.markers[j];
+
+            var url = '<a class="text-bold block text-primary ml-3" href="' + marker.url + '" target="_blank" rel="noreferrer noopener"><strong>' + marker.title.truncate(38) + '</strong></a>';
+
+            description += '<div class="mb-3">'
+                + '📅&nbsp; ' + marker.date
+                + url + '</div>'
+            ;
+        }
+
+        var icon = new L.Icon({
+            iconUrl: icons[group.type],
+            iconSize: [25, 41],
+            iconAnchor: [12, 41],
+            popupAnchor: [1, -34]
+        });
+
+        // width: @see https://stackoverflow.com/a/38007764/1348344
+        L.marker(group.position, { icon: icon }).addTo(map).bindPopup(description, {
+            maxWidth: 450
+        });
+    }
+</script>
+    </div>
+</div>                </div>
+            </div>
+        </div>
+
+        <footer class="pb-5 pt-5 mt-5">
+    <div class="container-fluid">
+        <blockquote class="blockquote text-bigger text-center mb-5">
+            "Meeting people from other countries brings <strong>fresh energy to your coding</strong>,
+            <br>new ideas and valuable feedback."
+        </blockquote>
+
+        <br>
+
+        <h3>How This Works?</h3>
+
+        <p>
+            This website is <strong>regenerated by <a href="https://github.com/TomasVotruba/friendsofphp.org/blob/9de36089966f32a79a3789cba0288a55c0f24ffd/.travis.yml#L28">Travis Cron</a> to <a href="https://github.com/tomasvotruba/friendsofphp.org">Github Pages</a> every 24 hours</strong>, so meetups are always fresh.
+        </p>
+
+        <p>
+            We show <strong>meetups for next 30 days</strong>, so you can <a href="https://www.tomasvotruba.cz/blog/2018/07/23/5-signs-should-never-have-a-talk-abroad/">pick up where to go speak</a> or talks with friends right away.
+        </p>
+
+        <hr class="mt-5 mb-5">
+
+        <p class="text-center">
+            <a href="/groups/" class="btn btn-warning btn-lg">Did we Forget Your Group?</a>
+        </p>
+
+        <br>
+
+        <div class="text-center pt-5">
+            <p class="dim">
+                Made with ❤️ on️ <a href="https://www.statie.org">Statie</a> by ️☕️ and <a href="https://tomasvotruba.com">Tomas Votruba</a>
+                <br>
+                Check <a href="https://github.com/tomasvotruba/friendsofphp.org">the repository on Github</a>
+            </p>
+        </div>
+    </div>
+</footer>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-122522291-1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-122522291-1');
+</script>
+    </body>
+</html>
